@@ -174,7 +174,8 @@
 #descrizione {
     text-align: justify;
     font-size: 17px;
-    line-height: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1px;
 }
 
 #logo_profile {
