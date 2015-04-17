@@ -1,0 +1,78 @@
+<!--- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) --->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Glas Travels">
+    <meta name="description" content="La compagnia di viaggi #1 al mondo!">
+    <title>Glas Travels</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
+    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background_body">
+
+        <!--- LOGO + HEADER + MENU --->
+
+        <div id="navbar"></div>
+
+        <!--- sections menu --->
+
+        <div>
+
+            <!-- personal area sections -->
+
+            <ul class="nav nav-tabs nav-stacked" style="margin-top: 51px; min-width:200px;">
+                <!-- <a class="list-group-item disabled">Area personale di Fabio</a> -->
+                <li><a class="list-group-item active">Dati personali</a>
+                </li>
+                <li><a href="#" class="list-group-item">Carrello<span class="badge">2</span></a>
+                </li>
+                <li> <a href="#" class="list-group-item">I miei acquisti<span class="badge">8</span></a>
+                </li>
+                <li> <a href="#" class="list-group-item">Le mie recensioni<span class="badge">6</span></a>
+                </li>
+                <li><a href="#" class="list-group-item">Preferenze</a>
+                </li>
+            </ul>
+
+            <!-- current section contents -->
+
+            <div id="current_section_contents_container">
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div id="footer"></div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+
+    <!-- scripts parts -->
+
+    <script>
+        $("#navbar").load("navbar.html");
+    </script>
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+</body>
+
+</html>
