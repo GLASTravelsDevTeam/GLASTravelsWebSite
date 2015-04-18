@@ -192,8 +192,7 @@
     vertical-align: middle;
 }
 
-.site_content {
-    margin-top: 51px;
+#site_content {
     overflow: hidden;
 }
 

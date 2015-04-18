@@ -10,12 +10,17 @@
     <meta name="description" content="La compagnia di viaggi #1 al mondo!">
     <title>Glas Travels</title>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="font-awesome-4.3.0/css/font-awesome.css" rel="stylesheet">
     <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
 </head>
 
 <body>
@@ -25,32 +30,36 @@
 
         <div id="navbar"></div>
 
-        <!--- sections menu --->
+        <!--- page content --->
 
-        <div>
+        <div class="row-fluid" id="site_content">
 
-            <!-- personal area sections -->
-
-            <ul class="nav nav-tabs nav-stacked" style="margin-top: 51px; min-width:200px;">
-                <!-- <a class="list-group-item disabled">Area personale di Fabio</a> -->
-                <li><a class="list-group-item active">Dati personali</a>
-                </li>
-                <li><a href="#" class="list-group-item">Carrello<span class="badge">2</span></a>
-                </li>
-                <li> <a href="#" class="list-group-item">I miei acquisti<span class="badge">8</span></a>
-                </li>
-                <li> <a href="#" class="list-group-item">Le mie recensioni<span class="badge">6</span></a>
-                </li>
-                <li><a href="#" class="list-group-item">Preferenze</a>
-                </li>
-            </ul>
-
-            <!-- current section contents -->
-
-            <div id="current_section_contents_container">
-
+            <div class="list-group col-2">
+                <span href="#" class="list-group-item list-group-item-info">
+                Area personale
+                </span>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-comment-o"></i> Lorem ipsum
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-search"></i> Lorem ipsum
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-user"></i> Lorem ipsum
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-folder-open-o"></i> Lorem ipsum <span class="badge">14</span>
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-bar-chart-o"></i> Lorem ipsumr <span class="badge">14</span>
+                </a>
+                <a href="#" class="list-group-item">
+                    <i class="fa fa-envelope"></i> Lorem ipsum
+                </a>
             </div>
 
+            <div class="col-*-8">
+            </div>
         </div>
 
         <!-- FOOTER -->
@@ -61,7 +70,6 @@
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
 
