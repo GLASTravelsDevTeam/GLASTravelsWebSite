@@ -173,7 +173,7 @@
 
 #descrizione {
     text-align: justify;
-    font-size: 17px;
+    font-size: 15px;
     font-family: 'PT Sans Narrow', sans-serif;
     letter-spacing: 1px;
 }
@@ -239,4 +239,9 @@
 #slide {
     height: 550px;
     width: 2000px;
+}
+
+#path {
+    position: relative;
+    top: -50px;
 }
