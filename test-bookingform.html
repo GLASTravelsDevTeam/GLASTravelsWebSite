@@ -116,177 +116,381 @@
             <!-- ======== WIDGET PRENOTAZIONE ==========-->
             <div class="container marketing">
 
-                <!--   <div class="hermes-modal-booking" ng-app="booking">
+                <div class="hermes-modal-booking ng-scope" ng-app="booking">
 
-                 <div class="container-fluid" ng-controller="bookingController"> -->
-                <div class="row">
-
-                    <div class="col-md-8 border-section">
+                    <div class="container-fluid ng-scope" ng-controller="bookingController">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group date-input">
-                                    <input type="text" id="datein" value="{{book.from.format('L')}}" class="form-control check-in-input" readonly="true">
+
+                            <div class="col-md-8 border-section">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group date-input">
+                                            <input type="text" id="datein" value="04/22/2015" class="form-control check-in-input" readonly="true">
+                                        </div>
+                                        <!-- end of form group -->
+                                    </div>
+                                    <!-- end of col 6 -->
+                                    <div class="col-md-6">
+                                        <div class="form-group date-input">
+                                            <input type="text" value="04/23/2015" id="dateout" class="form-control check-in-input" readonly="true">
+                                        </div>
+                                        <!-- end of form group -->
+                                    </div>
                                 </div>
-                                <!-- end of form group -->
-                            </div>
-                            <!-- end of col 6 -->
-                            <div class="col-md-6">
-                                <div class="form-group date-input">
-                                    <input type="text" value="{{book.to.format('L')}}" id="dateout" class="form-control check-in-input" readonly="true">
+
+                                <div class="row">
+                                    <div class="calendar-wrapper" id="calendar">
+
+                                        <div id="dates" booking-calendar-directive="" check-in="book.from" check-out="book.to" difference="difference" class="col-md-6 ng-isolate-scope hasDatepicker">
+
+                                            <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2" style="display: block; width: 34em;">
+                                                <div class="ui-datepicker-group ui-datepicker-group-first">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">April</span>&nbsp;<span class="ui-datepicker-year">2015</span>
+                                                        </div>
+                                                    </div>
+                                                    <table class="ui-datepicker-calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="ui-datepicker-week-end"><span title="Sunday">Su</span>
+                                                                </th>
+                                                                <th><span title="Monday">Mo</span>
+                                                                </th>
+                                                                <th><span title="Tuesday">Tu</span>
+                                                                </th>
+                                                                <th><span title="Wednesday">We</span>
+                                                                </th>
+                                                                <th><span title="Thursday">Th</span>
+                                                                </th>
+                                                                <th><span title="Friday">Fr</span>
+                                                                </th>
+                                                                <th class="ui-datepicker-week-end"><span title="Saturday">Sa</span>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">1</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">2</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">3</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">4</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">5</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">6</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">7</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">8</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">9</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">10</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">11</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">12</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">13</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">14</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">15</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">16</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">17</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">18</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default ui-state-highlight ui-state-active" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">19</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">20</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">21</a>
+                                                                </td>
+                                                                <td class=" ui-state-selected" title="ui-state-selected" data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">22</a>
+                                                                </td>
+                                                                <td class=" ui-state-selected" title="ui-state-selected" data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">23</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">24</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">25</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">26</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">27</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">28</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">29</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">30</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="ui-datepicker-group ui-datepicker-group-last">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-right"><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">May</span>&nbsp;<span class="ui-datepicker-year">2015</span>
+                                                        </div>
+                                                    </div>
+                                                    <table class="ui-datepicker-calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="ui-datepicker-week-end"><span title="Sunday">Su</span>
+                                                                </th>
+                                                                <th><span title="Monday">Mo</span>
+                                                                </th>
+                                                                <th><span title="Tuesday">Tu</span>
+                                                                </th>
+                                                                <th><span title="Wednesday">We</span>
+                                                                </th>
+                                                                <th><span title="Thursday">Th</span>
+                                                                </th>
+                                                                <th><span title="Friday">Fr</span>
+                                                                </th>
+                                                                <th class="ui-datepicker-week-end"><span title="Saturday">Sa</span>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">1</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">2</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">3</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">4</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">5</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">6</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">7</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">8</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">9</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">10</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">11</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">12</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">13</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">14</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">15</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">16</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">17</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">18</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">19</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">20</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">21</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">22</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">23</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">24</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">25</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">26</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">27</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">28</a>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">29</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">30</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2015"><a class="ui-state-default" href="http://s.codepen.io/wannymiarelli/fullpage/zxPyJV?#">31</a>
+                                                                </td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="ui-datepicker-row-break"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <!-- end of form group -->
+
                             </div>
+
+                            <div class="col-md-4 daysSection">
+
+                                <ul>
+                                    <li id="din" class="ng-binding"><b><i class="fa fa-arrow-right"></i> Check In:</b> 04/22/2015</li>
+                                    <li id="dout" class="ng-binding"><b><i class="fa fa-arrow-left"></i> Check Out: </b> 04/23/2015</li>
+                                </ul>
+
+                                <div class="divider"></div>
+                                <p class="days ng-binding"><b>Numero di noti:</b> 1</p>
+                                <div class="divider"></div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <div class="form-group">
+                                            <label><i class="fa fa-user"></i> Adulti</label>
+                                            <input type="number" class="form-control adults ng-valid ng-valid-min ng-valid-max ng-dirty ng-valid-number ng-touched" value="1" min="1" max="4" ng-model="book.rooms[0].adults">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <div class="form-group">
+                                            <label><i class="fa fa-user"></i> Bambini</label>
+                                            <input ng-click="rooms = true" type="number" value="0" class="form-control childs ng-pristine ng-untouched ng-valid ng-valid-min ng-valid-max" min="0" max="4" ng-model="book.rooms[0].childsNum" ng-change="book.generateChildren(book.rooms[0])">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label><i class="fa fa-barcode"></i> Codice Promo</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <button id="morerooms" type="button" class="btn btn-primary btn-sm btn-block" ng-click="rooms = !rooms">
+                                            <span ng-show="rooms == true" class="ng-hide"><i class="fa fa-angle-left"></i> Torna alle date</span>
+                                            <span ng-show="rooms == false"><i class="fa fa-angle-right"></i> Più le camere</span>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="col-md-12 validation ng-hide" ng-show="difference &lt; 1 || !book.from || !book.to">
+                                        <strong>Attenzione per procedere :</strong>
+                                        <p>Seleziona un range di date.
+                                            <br>
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button id="verify" ng-disabled="!difference || !book.from || !book.to" type="button" class="btn btn-success btn-lg btn-block" ng-click="book.verify(&#39;138&#39;, &#39;1331&#39;)"><i class="fa fa-search"></i> VERIFICA DISPONIBILITÀ</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="row">
-                            <div class="calendar-wrapper" id="calendar">
+                        <div class="row room-detail ng-hide" ng-show="rooms == 1">
+                            <div class="col-md-12 inner-padding" id="roomlist">
 
-                                <div id="dates" booking-calendar-directive check-in="book.from" check-out="book.to" difference="difference" class="col-md-6">
-
+                                <div class="row">
+                                    <div class="col-md-12 rooms-header">
+                                        <h4>Dettaglio Camera</h4>
+                                    </div>
                                 </div>
 
+                                <!-- ngRepeat: room in book.rooms -->
+                                <div ng-repeat="room in book.rooms" class="ng-scope">
+
+                                    <div class="row">
+                                        <div class="col-md-3 ng-binding">
+                                            Camera 1
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control input-sm ng-pristine ng-untouched ng-valid" ng-model="room.adults">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="number" class="form-control input-sm ng-pristine ng-untouched ng-valid ng-valid-max" ng-model="room.childsNum" ng-change="book.generateChildren(room)" max="4">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="button" class="btn btn-danger btn-sm btn-block" ng-click="book.removeRoom($index)"><i class="fa fa-trash-o"></i> Rimuovi</button>
+                                        </div>
+                                    </div>
+                                    <!-- end of row -->
+
+                                    <div class="row child-ages ng-hide" ng-show="room.childs.length &gt; 0">
+                                        <!-- ngRepeat: children in room.childs -->
+                                    </div>
+                                    <!-- end of row -->
+
+                                </div>
+                                <!-- end ngRepeat: room in book.rooms -->
+                                <!-- end of rooms -->
+
                             </div>
+
+                            <div class="col-md-12 children-list">
+                                <button class="btn btn-primary btn-sm" id="addroom" ng-click="book.addRoom()" ng-disabled="book.rooms.length &gt;= 4">
+                                    <span ng-show="book.rooms.length &gt;= 4" class="ng-hide">
+                                        Limite Raggiungo ( massimo 4 )
+                                    </span>
+                                    <span ng-show="book.rooms.length &lt; 4">
+                                        Aggiungi camera
+                                    </span>
+                                </button>
+                            </div>
+
                         </div>
 
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 daysSection">
-
-
-                            <ul>
-                                <li id="din"><b><i class="fa fa-arrow-right"></i> Check In:</b> {{book.from.format('L')}}</li>
-                                <li id="dout"><b><i class="fa fa-arrow-left"></i> Check Out: </b> {{book.to.format('L')}}</li>
-                            </ul>
-
-                            <div class="divider"></div>
-                            <p class="days"><b>Numero di notti:</b> {{difference}}</p>
-                            <div class="divider"></div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-
-                                    <div class="form-group">
-                                        <label><i class="fa fa-user"></i> Adulti</label>
-                                        <input type="number" class="form-control adults" value="1" min="1" max="4" ng-model="book.rooms[0].adults" />
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6">
-
-                                    <div class="form-group">
-                                        <label><i class="fa fa-user"></i> Bambini</label>
-                                        <input ng-click="rooms = true" type="number" value="0" class="form-control childs" min="0" max="4" ng-model="book.rooms[0].childsNum" ng-change="book.generateChildren(book.rooms[0])" />
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label><i class="fa fa-barcode"></i> Codice Promo</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-
-                                    <button id="morerooms" type="button" class="btn btn-primary btn-sm btn-block" ng-click="rooms = !rooms">
-                                        <span ng-show="rooms == true"><i class="fa fa-angle-left"></i> Torna alle date</span>
-                                        <span ng-show="rooms == false"><i class="fa fa-angle-right"></i> Più le camere</span>
-                                    </button>
-
-                                </div>
-
-                                <div class="col-md-12 validation" ng-show="difference < 1 || !book.from || !book.to">
-                                    <strong>Attenzione per procedere:</strong>
-                                    <p>Seleziona un range di date.
-                                        <br/>
-                                    </p>
-
-                                </div>
-
-                                <div class="col-md-12">
-                                    <button id="verify" ng-disabled="!difference || !book.from || !book.to" type="button" class="btn btn-success btn-lg btn-block" ng-click="book.verify('138', '1331')"><i class="fa fa-search"></i> VERIFICA DISPONIBILITÀ</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- end of row -->
-
-                <div class="row">
-                    <div class="col-md-12 inner-padding" id="roomlist">
-
-                        <div class="row">
-                            <div class="col-md-12 rooms-header">
-                                <h4>Dettaglio Camera</h4>
-                            </div>
-                        </div>
-
-                        <div ng-repeat="room in book.rooms">
-
-                            <div class="row">
-                                <div class="col-md-3">
-                                    Camera {{$index + 1}}
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <input type="number" class="form-control input-sm" ng-model="room.adults" />
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <input type="number" class="form-control input-sm" ng-model="room.childsNum" ng-change="book.generateChildren(room)" max="4" />
-                                </div>
-                                <div class="col-md-3">
-                                    <button type="button" class="btn btn-danger btn-sm btn-block" ng-click="book.removeRoom($index)"><i class="fa fa-trash-o"></i> Rimuovi</button>
-                                </div>
-                            </div>
-                            <!-- end of row -->
-
-                            <div class="row child-ages" ng-show="room.childs.length > 0">
-                                <div class="col-md-3" ng-repeat="children in room.childs">
-                                    <div class="from-group">
-                                        <select class="form-control input-sm" ng-model="children.age">
-                                            <option value="0">0 Anni</option>
-                                            <option value="1">1 Anno</option>
-                                            <option value="2">2 Anni</option>
-                                            <option value="3">3 Anni</option>
-                                            <option value="4">4 Anni</option>
-                                            <option value="5">5 Anni</option>
-                                            <option value="6">6 Anni</option>
-                                            <option value="7">7 Anni</option>
-                                            <option value="8">8 Anni</option>
-                                            <option value="9">9 Anni</option>
-                                            <option value="10">10 Anni</option>
-                                            <option value="11">11 Anni</option>
-                                            <option value="12">12 Anni</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of row -->
-
-
-                        </div>
-                        <!-- end of rooms -->
-
-                    </div>
-
-                    <div class="col-md-12 children-list">
-                        <button class="btn btn-primary btn-sm" id="addroom" ng-click="book.addRoom()" ng-disabled="book.rooms.length >= 4">
-                            <span ng-show="book.rooms.length >= 4">
-              Limite Raggiunto ( massimo 4 )
-            </span>
-                            <span ng-show="book.rooms.length < 4">
-              Aggiungi camera
-            </span>
-                        </button>
-                    </div>
+                    <!-- end of container -->
 
                 </div>
             </div>
