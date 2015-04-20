@@ -1,0 +1,76 @@
+sidebar {
+    display: inline-block;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+}
+
+sidebar .sidebar {
+    width: 230px;
+    margin: 24px 0px;
+}
+
+sidebar .sidebar > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+sidebar .sidebar > ul > li {
+    background: none;
+    position: relative;
+}
+
+sidebar .sidebar > ul > li i {
+    margin-right: 10px;
+}
+
+sidebar .sidebar > ul > li > a {
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    color: #5b5b5b;
+    padding: 0 24px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+}
+
+sidebar .sidebar > ul > li > a:hover {
+    color: #1e1e1e;
+}
+
+sidebar .sidebar > ul > li:last-child > a {
+    border: none;
+}
+
+sidebar .sidebar > ul > li > ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+    max-height: 500px;
+    overflow: hidden;
+    -webkit-transition: max-height, 300ms;
+    -moz-transition: max-height, 300ms;
+    transition: max-height, 300ms;
+}
+
+sidebar .sidebar > ul > li > ul.closed {
+    max-height: 0px;
+}
+
+sidebar .sidebar > ul > li > ul > li {
+    padding: 0 48px;
+    display: block;
+    color: #5b5b5b;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+sidebar .sidebar > ul > li > ul > li:hover {
+    color: #1e1e1e;
+}
