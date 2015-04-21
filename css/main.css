@@ -261,3 +261,7 @@
     margin-left: 12;
     padding-left: 20px;
 }
+
+#container {
+    overflow: hidden;
+}
