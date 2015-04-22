@@ -255,13 +255,59 @@
 .purchase-item-thumbnail {
     height: 200px;
     width: 200px;
+    padding: 0px 0px 0px 0px;
+    margin-right: 15px;
+    margin-left: 0px;
 }
 
 .purchase-item-details {
-    margin-left: 12;
-    padding-left: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 #container {
     overflow: hidden;
 }
+/* CSS for fixed-fluid layout */
+
+.fixed {
+    width: 200px;
+    /* the fixed width required */
+    
+    float: left;
+}
+
+.fixed + div {
+    /* margin-left: 200px; */
+    /* must match the fixed width in the .fixed class */
+    
+    overflow: hidden;
+}
+/* CSS to ensure sidebar and content are same height (optional) */
+
+html,
+body {
+    height: 100%;
+}
+
+.fill {
+    min-height: 100%;
+    position: relative;
+}
+
+.filler:after {
+    background-color: inherit;
+    bottom: 0;
+    content: "";
+    height: auto;
+    min-height: 100%;
+    left: 0;
+    margin: inherit;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    z-index: -1;
+}
+/* End of fixed-fluid CSS */
