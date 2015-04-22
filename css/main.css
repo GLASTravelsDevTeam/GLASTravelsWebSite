@@ -311,3 +311,7 @@ body {
     z-index: -1;
 }
 /* End of fixed-fluid CSS */
+
+#businessimg {
+    text-align: center;
+}

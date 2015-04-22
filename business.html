@@ -1,0 +1,150 @@
+<!--- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) --->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Glas Travels">
+    <meta name="description" content="La compagnia di viaggi #1 al mondo!">
+    <title>Glas Travels</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fontawesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- MapGlyphs -->
+    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+
+    <!-- Material Design iconic font -->
+    <link href="material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="background_body">
+
+        <!--- NAVBAR --->
+
+        <div id="navbar"></div>
+
+        <div class="container">
+
+            <!-- PATH -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb" id="path">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li class="active">Azienda</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <div class="container">
+
+                <!-- PAGE CONTENT ROW -->
+
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <!-- SIDE MENU -->
+
+                        <div class="list-group">
+                            <a href="chi_siamo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo aziendale</a>
+                            <a href="business.html" class="list-group-item heading list-group-item-success"><i class="md md-insert-chart"></i> Business</a>
+                            <a href="tof.html" class="list-group-item"><i class="md md-info-outline"></i> Termini e Condizioni</a>
+                            <a href="sicurezza.html" class="list-group-item"><i class="md md-vpn-lock"></i> Sicurezza &amp; Privacy</a>
+                            <a href="contatti.html" class="list-group-item"><i class="md md-email"></i> Contatti</a>
+                        </div>
+
+                    </div>
+
+                    <!-- COLUMN CONTENT -->
+
+                    <div class="col-md-6">
+                        <div class="row list-inline" id="chi_siamo_row">
+                            <li>
+                                <h1><small>Business plan. </small></h1>
+                            </li>
+
+                            <img id="businessimg" class="img-responsive hidden-xs" src="img/businessplan300.jpg" alt="Logo azienda">
+                            <hr>
+                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                <a href="glastravels_bilancio.pdf" type="button" class="btn btn-default"> <span class=" glyphicon glyphicon-download-alt "></span> Scarica il nostro bilancio!</a>
+                            </div>
+
+                            <hr>
+                            <h1><small>Trasparenza. </small></h1>
+                            <p id="descrizione ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut neque arcu. Nunc hendrerit velit id massa ultricies aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam imperdiet pulvinar arcu, in consequat leo sodales nec. Quisque eu odio laoreet, tempus lorem id, ornare diam. Sed vel arcu ligula. Curabitur mattis libero sit amet cursus vulputate. Nullam condimentum ligula sapien, quis tristique felis imperdiet ac. Phasellus arcu tellus, luctus in fermentum sed, iaculis ac massa. Phasellus dui magna, pulvinar id erat mattis, dictum hendrerit nibh. Praesent sed tellus auctor, egestas diam sit amet, lacinia sapien. Etiam vitae quam eleifend dui convallis auctor. Suspendisse elementum cursus massa, eu vehicula diam rutrum sed. Phasellus in magna ornare, viverra elit sed, fringilla nibh. </p>
+                        </div>
+                    </div>
+                    <!-- /.ROW -->
+
+                    <!-- ===== TAG SOCIALI  =====-->
+                    <div class="col-md-3 hidden-xs " id="tags ">
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title " id="descrizione ">TAGS</h3>
+                            </div>
+                            <div class="panel-body ">
+                                <h1>Stati Uniti</h1>
+                                <h4>Francia</h4>
+                                <h2> Italia</h2>
+                                <h1>Asia</h1>
+                                <h2>Giappone</h2>
+                                <h5>Africa</h5>
+                                <h3> Dubai</h3>
+                                <h2>Las Vegas</h2>
+                                <h1> New York</h1>
+                                <h3>Coast-to-Coast</h3>
+                                <h2>Hawaii</h2>
+                                <h5>Cina</h5> </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+
+    <div id="footer "></div>
+
+    <!-- Bootstrap Javascript Core-->
+
+    <script src="js/bootstrap.min.js "></script>
+    <!-- <script src="js/docs.min.js "></script> -->
+
+    <!-- scripts parts -->
+
+    <script>
+        $("#navbar ").load("navbar.html ");
+    </script>
+    <script>
+        $("#footer ").load("footer.html ");
+    </script>
+    <script>
+        $("#sidebar ").load("sidebar.html ");
+    </script>
+
+
+</body>
+
+</html>
