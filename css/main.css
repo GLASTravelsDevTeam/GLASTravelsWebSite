@@ -269,6 +269,7 @@
 #container {
     overflow: hidden;
 }
+}
 /* CSS for fixed-fluid layout */
 
 .fixed {
@@ -277,7 +278,6 @@
     
     float: left;
 }
-
 .fixed + div {
     /* margin-left: 200px; */
     /* must match the fixed width in the .fixed class */
@@ -290,12 +290,10 @@ html,
 body {
     height: 100%;
 }
-
 .fill {
     min-height: 100%;
     position: relative;
 }
-
 .filler:after {
     background-color: inherit;
     bottom: 0;
