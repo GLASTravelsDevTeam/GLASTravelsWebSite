@@ -48,7 +48,7 @@
                 <li><a href="index.html">Home</a>
                 </li>
                 <li>Azienda</li>
-                <li class="active">Profilo aziendale</li>
+                <li class="active">Lavora con Noi</li>
             </ol>
 
 
@@ -61,14 +61,14 @@
                     <!-- SIDE MENU -->
 
                     <div class="list-group">
-                        <a href="chi_siamo.html" class="list-group-item active"><i class="fa fa-user"></i> Profilo aziendale</a>
+                        <a href="chi_siamo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo aziendale</a>
                         <a href="business.html" class="list-group-item"><i class="md md-insert-chart"></i> Business</a>
                         <a href="tos.html" class="list-group-item"><i class="md md-info-outline"></i> Termini e Condizioni</a>
                         <a href="sicurezza.html" class="list-group-item"><i class="md md-vpn-lock"></i> Sicurezza &amp; Privacy</a>
                         <a href="contatti.html" class="list-group-item"><i class="md md-email" data-toggle="collapse"></i> Contatti</a>
-                        <a href="#sottomenu" class="list-group-item" data-toggle="collapse"><i class="md md-work"></i> Lavora con Noi</a>
+                        <a href="#sottomenu" class="list-group-item active" data-toggle="collapse"><i class="md md-work"></i> Lavora con Noi</a>
                         <div class="collapse" id="sottomenu">
-                            <a href="lavori_stagionali.html" class="list-group-item">&#9679; Lavori stagionali</a>
+                            <a href="lavori_stagionali.html" class="list-group-item list-group-item-success">&#9679; Lavori stagionali</a>
                             <a href="studenti.html" class="list-group-item">&#9679; Studenti</a>
                             <a href="stage.html" class="list-group-item">&#9679; Opportunità di stage</a>
                         </div>
@@ -79,25 +79,14 @@
                 <!-- COLUMN CONTENT -->
 
                 <div class="col-md-6">
-                    <div class="row list-inline" id="chi_siamo_row">
-                        <li>
-                            <img class="chi_siamo_img img-responsive hidden-xs" src="img/GlasTravelsLOGO.png" alt="Logo azienda">
-                        </li>
-                        <li>
-                            <h1 id="logo_profile">Glas Travels </h1>
-                        </li>
-                    </div>
+                    <h1><small>Lavori stagionali. </small></h1>
 
-                    <h1><small> Chi siamo. </small></h1>
+                    <p id="descrizione">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut neque arcu. Nunc hendrerit velit id massa ultricies aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam imperdiet pulvinar arcu, in consequat leo sodales nec. Quisque eu odio laoreet, tempus lorem id, ornare diam. Sed vel arcu ligula. Curabitur mattis libero sit amet cursus vulputate. Nullam condimentum ligula sapien, quis tristique felis imperdiet ac. Phasellus arcu tellus, luctus in fermentum sed, iaculis ac massa. Phasellus dui magna, pulvinar id erat mattis, dictum hendrerit nibh. Praesent sed tellus auctor, egestas diam sit amet, lacinia sapien. Etiam vitae quam eleifend dui convallis auctor. Suspendisse elementum cursus massa, eu vehicula diam rutrum sed. Phasellus in magna ornare, viverra elit sed, fringilla nibh. Nullam gravida erat id sapien molestie convallis. Sed id malesuada est. Ut ac rhoncus sapien. Aenean fringilla maximus nunc, in bibendum risus. Duis lobortis dui vel lacus bibendum, sit amet tincidunt diam interdum. Praesent luctus dapibus dui nec maximus. Nullam at risus ac dolor laoreet egestas quis non lorem. Maecenas sit amet purus lacus. Aliquam consequat nisl et interdum rutrum.</p>
 
-                    <p id="descrizione">Compagnia di viaggi da poco sul mercato, che già non ha tradito i clienti che l'hanno scelta.
-                        <br>Fondata nel 2014 da quattro giovani ragazzi, Giorgia, Luca, Aleksandar e Sergio (da qui il nome Glas) ha fin da subito investito per poter dare il massimo ai propri clienti, compresi anche quelli un po' più esigenti.
-                        <br>In un solo anno, ha saputo soddisfare le esigenze di tutti creando scompiglio fra la concorrenza. Essendo l'agenzia <em>Glas Travels</em> operativa solo online, il sito è stato ottimizzato anche per mobile permettendo all'utente di scegliersi un tutto e per tutto il proprio viaggio comodamente da casa o da telefono/tablet.</p>
+                    <!-- UPLOAD -->
+
                     <hr>
-                    <h1><small> Perchè noi. </small></h1>
-                    <p id="descrizione">Viaggi all’insegna della conoscenza approfondita di una destinazione, viaggi pensati per suscitare emozioni e liberare fantasie. Itinerari che conducono attraverso storia, tecnologia e abitudini. Occasioni che vogliamo i nostri clienti colgano per confrontarsi con realtà particolarmente diverse da quelle che appartengono a tutti noi. In ogni nostra proposta non deve, in ogni caso, mancare lo stimolo culturale che saprà conquistare sia chi si avvicina per la prima volta ad un viaggio fuori dal proprio Paese, sia a chi, come noi, ne è da sempre un grandissimo appassionato. Guidarvi su di una strada nuova o in parte conosciuta, solo di rado è un mestiere, spesso è una passione. La differenza crediamo si possa sentire.
-                        <br>
-                        <br>Nell’augurarci di potervi avere tra i nostri clienti vogliamo che lasciate a casa ogni preoccupazione, vi vogliamo coccolati e, soprattutto, vogliamo che anche voi arriviate ad avere sempre maggiori curiosità, così come a noi capita ancora oggi di averne! È per tutti questi motivi, e per molti altri ancora, che abbiamo elaborato diverse proposte di viaggio per farvi vivere e vedere quello che noi stessi amiamo e vorremmo vedeste. Venite quindi con noi, con la nostra passione, a riscoprire cosa si trova nel mondo!</p>
+                    <div id="upload"></div>
                 </div>
                 <!-- /.ROW -->
 
@@ -144,6 +133,9 @@
         </script>
         <script>
             $("#sidebar").load("sidebar.html");
+        </script>
+        <script>
+            $("#upload").load("upload.html");
         </script>
 
     </div>
