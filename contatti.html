@@ -64,7 +64,13 @@
                         <a href="business.html" class="list-group-item"><i class="md md-insert-chart"></i> Business</a>
                         <a href="tos.html" class="list-group-item"><i class="md md-info-outline"></i> Termini e Condizioni</a>
                         <a href="sicurezza.html" class="list-group-item"><i class="md md-vpn-lock"></i> Sicurezza &amp; Privacy</a>
-                        <a href="contatti.html" class="list-group-item active"><i class="md md-email"></i> Contatti</a>
+                        <a href="contatti.html" class="list-group-item active"><i class="md md-email" data-toggle="collapse"></i> Contatti</a>
+                        <a href="#sottomenu" class="list-group-item" data-toggle="collapse"><i class="md md-work"></i> Lavora con Noi</a>
+                        <div class="collapse" id="sottomenu">
+                            <a href="lavori_stagionali.html" class="list-group-item">Lavori stagionali</a>
+                            <a href="studenti.html" class="list-group-item">Studenti</a>
+                            <a href="stage.html" class="list-group-item">Opportunità di stage</a>
+                        </div>
                     </div>
 
                 </div>
@@ -93,6 +99,19 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label for="InputMessage">Oggetto</label>
+                            <div class="input-group">
+                                <select name="Oggetto" class="form-control">
+                                    <option value="1">Informazioni</option>
+                                    <option value="2">Feedback</option>
+                                    <option value="3">Reclami</option>
+                                    <option value="4">Ordini e pagamenti</option>
+                                    <option value="5">Supporto tecnico</option>
+                                    <option value="6">Altro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label for="InputMessage">Messaggio</label>
                             <div class="input-group">
                                 <textarea name="InputMessage" placeholder="..." id="InputMessage" class="form-control" rows="5" required></textarea>
@@ -106,6 +125,18 @@
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
                             </div>
                         </div>
+                        <form accept-charset="UTF-8" action="/t/UqfM4Y02aCcU1dDfbJdJ8g" enctype="multipart/form-data" id="upload" method="post">
+                            <div style="margin:0;padding:0;display:inline">
+                                <input name="utf8" type="hidden" value="&#x2713;" />
+                                <input name="authenticity_token" type="hidden" value="ctWoVbEtAwrLNZXqISIzxw6zhDP9hYZf1BTMebiLsRw=" />
+                            </div>
+                            <input name="params" type="hidden" value="{&quot;template_id&quot;:&quot;7b9d1350907211e3a791e77c5ce90c86&quot;,&quot;auth&quot;:{&quot;key&quot;:&quot;c60498d0906a11e3b39349d5b0c8d2a9&quot;,&quot;expires&quot;:&quot;2015/04/26 10:20:04+00:00&quot;}}" />
+                            <input name="signature" type="hidden" value="169eddb7c7ec35e1baf966a7e5cae144b3ec3fd9" />
+                            <input id="upload_file" name="upload[file]" type="file" />
+                            <br>
+                            <input name="commit" type="submit" value="Save Upload" />
+                        </form>
+                        <br>
                         <input type="submit" name="submit" id="submit" value="Invia" class="btn btn-info pull-right">
                     </form>
                 </div>
