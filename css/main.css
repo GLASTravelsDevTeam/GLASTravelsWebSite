@@ -356,3 +356,20 @@ body {
     color: #454444;
 }
 /* fine FAQ */
+/* inizio login */
+
+#login {
+    padding: 15px;
+}
+
+#login .input-group {
+    margin-bottom: 15px;
+}
+
+#login .input-group input {}
+
+#login .btn {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* fine login */
