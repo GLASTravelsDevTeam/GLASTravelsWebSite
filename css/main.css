@@ -394,3 +394,7 @@ body {
     margin-right: 0px;
 }
 /* fine login */
+
+.search-result {
+    padding-bottom: 15px;
+}
