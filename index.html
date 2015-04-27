@@ -101,21 +101,14 @@
 
             <!-- DATE PICKER -->
 
-            <div class="input-group date">
-                <input type="text" class="form-control">
-                <span class="input-group-addon">
-            <i class="fa fa-calendar"></i>
-        </span>
-            </div>
-
-            <div class="input-daterange input-group" id="datepicker">
+            <div class="input-daterange input-group">
                 <span class="input-group-addon">Dal</span>
-                <input type="text" class="input-sm form-control" name="start" />
+                <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" />
                 <span class="input-group-addon">al</span>
-                <input type="text" class="input-sm form-control" name="end" />
+                <input type="text" class="input-sm form-control" name="end" id="datepicker-al" />
                 <span class="input-group-addon">
-            <i class="fa fa-calendar"></i>
-        </span>
+                    <i class="fa fa-calendar"></i>
+                </span>
             </div>
 
             <!-- Continenti -->
@@ -246,7 +239,20 @@
         $("#footer").load("footer.html");
     </script>
     <script>
-        $('.input-group.date').datepicker({
+        $('#datepicker-dal').datepicker({
+            todayBtn: "linked",
+            language: "it",
+            autoclose: true,
+            todayHighlight: true,
+            defaultViewDate: {
+                year: 1977,
+                month: 04,
+                day: 25
+            }
+        });
+    </script>
+    <script>
+        $('#datepicker-al').datepicker({
             todayBtn: "linked",
             language: "it",
             autoclose: true,
