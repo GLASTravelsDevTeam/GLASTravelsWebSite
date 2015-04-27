@@ -16,6 +16,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet">
+    <!-- <script src="js/bootstrap.js"></script> -->
 
     <!-- Main CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -24,211 +26,17 @@
     <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="fontawesome/css/font-awesome.css" rel="stylesheet">
 
-    <!-- MapGlyphs -->
-    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
-
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
-    <script src="flexslider/jquery.flexslider.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function () {
-            $('.flexslider').flexslider();
-        });
-    </script>
-
-    <!-- Datepicker -->
-    <link rel="stylesheet" href="css/datepicker.css" type="text/css">
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function () {
-            $('.datepicker').datepicker();
-        });
-    </script>
+    <script src="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
 </head>
 
 <body>
-    <div class="background_body">
 
-        <!--- NAVBAR --->
-
-        <div id="navbar"></div>
-
-        <!-- CONTENT -->
-
-        <div id="container">
-
-            <!--- SLIDER --->
-
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img src="img/tokyo2000x550.jpg" alt="immagine Tokyo" />
-                        <div class="slide_text">
-                            <div class="slide_title">Tokyo</div>
-                            <div class="slide_byline">Promozione 3000€ per 2.
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/egitto2000x550.jpg" alt="immagine Egitto" />
-                        <div class="slide_text">
-                            <div class="slide_title">Egitto</div>
-                            <div class="slide_byline">Sulle dune del Sahara entro Dicembre 2015.
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/isole-fiji2000x550.jpg" alt="immagine Isole Fiji" />
-                        <div class="slide_text">
-                            <div class="slide_title">Isole Fiji</div>
-                            <div class="slide_byline">Super offerta fino al 10 giugno 2015!
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/las-vegas2000x550.jpg" alt="immagine Las Vegas" />
-                        <div class="slide_text">
-                            <div class="slide_title">Las Vegas</div>
-                            <div class="slide_byline">La meta più richiesta di sempre!
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/parigi2000x550(luca).jpg" alt="immagine Parigi" />
-                        <div class="slide_text">
-                            <div class="slide_title">Parigi</div>
-                            <div class="slide_byline">Visita la famosa capitale francese! Promozione valida per novelli sposi.
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- ======== WIDGET PRENOTAZIONE ==========-->
-
-            <div class="datepicker">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Check in:
-                                <input class="span2" value="" id="dpd1" type="text">
-                            </th>
-                            <th>Check out:
-                                <input class="span2" value="" id="dpd2" type="text">
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-            <hr>
-
-            <!-- Continenti -->
-
-            <div class="container marketing">
-
-                <div class="row">
-                    <div class="col-sm-4 ">
-                        <i class="mg map-wrld-eu mg-6x"></i>
-                        <h2>Europa</h2>
-                        <p>Vacanze e weekend a tema per scoprire l’Europa e le sue capitali Da Lisbona a Varsavia, da Atene alla Scandinavia, dalla Francia all’Austria. Le vacanze in Europa targate Glas Travels sono affascinanti e istruttive, nonché piacevoli e convenienti. Le proposte più allettanti riguardano i weekend in Europa “mirati”, ossia consigli e soluzioni per non perdere tempo e organizzare un fine settimana all’insegna - a seconda delle preferenze - dell’arte, dello sport, della buona tavola, della famiglia o della cura del proprio corpo. Molte sono le mete favolose anche per un soggiorno balneare in Europa. </p>
-                        <p><a class="btn btn-default" href="/viaggi/europa.html" role="button">Vedi le offerte</a>
-                        </p>
-                    </div>
-                    <div class="col-sm-4 ">
-                        <i class="mg map-wrld-am mg-6x"></i>
-                        <h2>America</h2>
-                        <p>La prima cosa che stupisce i visitatori è la vastità dei suoi spazi: montagne maestose, laghi grandi come mari, fiumi lunghissimi, enormi parchi nazionali dalla bellezza selvaggia, città interminabili e ampie pianure con distanze quasi improbabili se percorse via terra. Ognuno dei 50 Stati che formano la nazione degli Stati Uniti è in grado di riservare continue sorprese al turista. Le Americhe sono un continente, da scoprire con più viaggi, seguendo i propri interessi, per poter cogliere le mille sfaccettature della loro natura e dei loro abitanti. </p>
-                        <p><a class="btn btn-default" href="/viaggi/america.html" role="button">Vedi le offerte</a>
-                        </p>
-                    </div>
-                    <div class="col-sm-4 ">
-                        <i class="mg map-wrld-as mg-6x"></i>
-                        <h2>Asia</h2>
-                        <p>Tutte le strade oggi portano a Pechino, proprio come un tempo portavano a Roma. La Cina è, infatti, il Paese più popolato del mondo, dal nobile passato e dal futuro promettente, locomotiva economica del pianeta e frontiera avanzata della globalizzazione. Tuttavia, questo sterminato paese è per larghi tratti ancora quello che scoprì Marco Polo, una meravigliosa terra, misteriosa e affascinante, che custodisce segreti e arcani da svelare. Un originale mix di spiritualità confuciana e pragmatismo mercantile, di antica sapienza ed efficiente dinamismo. </p>
-                        <p><a class="btn btn-default" href="/viaggi/asia.html" role="button">Vedi le offerte</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="seconda-riga">
-                    <div class="col-sm-4 col-sm-offset-2">
-                        <i class="mg map-wrld-af mg-6x"></i>
-                        <h2>Africa</h2>
-                        <p>Bella, oziosa, rilassata e piena di gioia di vivere: Città del Capo è veramente una piccola metropoli da visitare con lentezza, lasciandosene affascinare. Panorami mozzafiato, dimore storiche, villaggi costieri, montagne leggendarie come Table Mountain o Cape of Good Hope, il mitico Capo di Buona Speranza. La “città madre” del Sudafrica è il luogo dove la Nazione è nata, in cui le diverse culture del Paese si sono stratificate, combattute e pacificate.
-                            <br>I parchi nazionali del sudafrica rappresentano ovviamente una delle principali attrattive di questo vasto paese. Tutti i parchi e le riserve beneficiano di infrastrutture di alto livello e all’avanguardia. Alcuni dei parchi più estesi propongono escursioni naturalistiche guidate da ranger. Anche se non è sempre necessaria la presenza di un accompagnatore, è comunque certo che muovendosi con l’ausilio di una guida esperta è possibile vedere e imparare molto di più che non da soli, oltretutto in totale sicurezza. Il sudafrica è probabilmente il paese che offre le migliori opportunità di osservare i cosiddetti “big five” e cioè rinoceronti, bufali, leoni, leopardi ed elefanti. </p>
-                        <p><a class="btn btn-default" href="/viaggi/africa.html" role="button">Vedi le offerte</a>
-                        </p>
-                    </div>
-
-
-                    <div class="col-sm-4">
-                        <i class="mg map-wrld-oc mg-6x"></i>
-                        <h2>Oceania</h2>
-                        <p><em>"L’Australia è il più secco, piatto, caldo, arido sterile e climaticamente aggressivo di tutti i continenti abitati”</em> - Bill Bryson (Un paese bruciato dal sole)
-                            <br>
-                            <br> Eppure malgrado questa sia l’istantanea che abbiamo impresso a fuoco nel nostro immaginario collettivo (spesso anche in quello degli stessi Australiani), questa isola-continente è estremamente “cittadina”, l’80 per cento dei suoi abitanti vive in città. Monumento alla modernità, alla razionalità e al gusto del buon vivere, le città australiane sono verdi di parchi e giardini, piene di luoghi di ritrovo, di negozi, ristoranti, eventi culturali e mondani. Non sono attrazioni o “trappole” turistiche, ma luoghi dove si respira una Australia diversa e altrettanto vera di quella dell’outback. Vestiti in giacca e cravatta e con la ventiquattr’ore in mano gli australiani sono ancora se stessi: informali, accomodanti, ma non ingenui. Decisi a rivendicare la propria unicità, desiderosi di affermarsi, diffidenti, aperti al nuovo e soprattutto capaci ancora di credere che la ricchezza della vita stia nel confrontarsi e raccontarsi. Incontrateli.
-                        </p>
-                        <p><a class="btn btn-default" href="/viaggi/oceania.html" role="button">Vedi le offerte</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Marketing -->
-
-            <br>
-            <div class="container featurette">
-
-                <hr class="featurette-divider">
-                <br>
-                <div class="row featurette">
-                    <div class="col-sm-7">
-                        <h4 class="featurette-heading"><em>Che cosa dicono di noi. </em><span class="text-muted">Wired Magazine</span></h4>
-                        <p class="lead">Chi gestisce il sito è molto efficiente. In due giorni, il viaggio dei propri sogni è bello che prenotato. <em>Glas Travels</em> scalerà sicuramente le classifiche per il miglior TOP TRAVEL SITE.
-                            <br>
-                            <br><a class="btn btn-default" href="recensioni.html" role="button">Vedi le altre recensioni</a>
-                        </p>
-                    </div>
-                    <div class="col-sm-5 hidden-xs">
-                        <img class="featurette-image img-responsive" src="img/Wired_logo.png" alt="Wired logo">
-                    </div>
-                </div>
-
-                <hr class="featurette-divider">
-                <br>
-
-                <div class="row featurette hidden-xs">
-                    <div class="row" id="Robert">
-                        <p id="cit">&ldquo;Io viaggio non per andare da qualche parte, ma per andare. Viaggio per viaggiare…&rdquo;</p>
-                        <p class="lead">-<em>Robert Louis Stevenson</em>
-                        </p>
-                    </div>
-                    <hr class="featurette-divider">
-                    <br>
-                </div>
-                <div class="row featurette">
-                    <div class="col-sm-5 hidden-xs">
-                        <img class="featurette-image img-responsive" src="img/GlasTravelsLOGO.png" alt="Logo azienda">
-                    </div>
-                    <div class="col-sm-7">
-                        <h4 class="featurette-heading"><em id="logo_featurette">Glas Travels </em> <span class="text-muted">Chi siamo.</span></h4>
-                        <p>Compagnia di viaggi da poco sul mercato, che già non ha tradito i clienti che l'hanno scelta.
-                            <br>Viaggi all’insegna della conoscenza approfondita di una destinazione, viaggi pensati per suscitare emozioni e liberare fantasie. Itinerari che conducono attraverso storia, tecnologia e abitudini. Venite con noi, con la nostra passione, a riscoprire cosa si trova nel mondo! E ricordate: non come turisti, ma come ospiti!
-                            <br>
-                            <br><a class="btn btn-default" href="chi_siamo.html" role="button">Scopri di più su di noi</a>
-                        </p>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        <!-- FOOTER -->
-
-        <div id="footer"></div>
-
+    <div class="input-group date">
+        <input type="text" class="form-control">
+        <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+        </span>
     </div>
 
     <!-- Bootstrap Javascript Core-->
@@ -236,13 +44,18 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="js/docs.min.js"></script> -->
 
-    <!-- scripts parts -->
-
     <script>
-        $("#navbar").load("navbar.html");
-    </script>
-    <script>
-        $("#footer").load("footer.html");
+        $('.input-group.date').datepicker({
+            todayBtn: "linked",
+            language: "it",
+            autoclose: true,
+            todayHighlight: true,
+            defaultViewDate: {
+                year: 1977,
+                month: 04,
+                day: 25
+            }
+        });
     </script>
 
 </body>
