@@ -36,6 +36,9 @@
         });
     </script>
 
+    <!-- Date Picker -->
+    <script src="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
 </head>
 
 <body>
@@ -96,7 +99,24 @@
                 </ul>
             </div>
 
-            <!-- ======== WIDGET PRENOTAZIONE ==========-->
+            <!-- DATE PICKER -->
+
+            <div class="input-group date">
+                <input type="text" class="form-control">
+                <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+        </span>
+            </div>
+
+            <div class="input-daterange input-group" id="datepicker">
+                <span class="input-group-addon">Dal</span>
+                <input type="text" class="input-sm form-control" name="start" />
+                <span class="input-group-addon">al</span>
+                <input type="text" class="input-sm form-control" name="end" />
+                <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+        </span>
+            </div>
 
             <!-- Continenti -->
 
@@ -224,6 +244,19 @@
     </script>
     <script>
         $("#footer").load("footer.html");
+    </script>
+    <script>
+        $('.input-group.date').datepicker({
+            todayBtn: "linked",
+            language: "it",
+            autoclose: true,
+            todayHighlight: true,
+            defaultViewDate: {
+                year: 1977,
+                month: 04,
+                day: 25
+            }
+        });
     </script>
 
 </body>
