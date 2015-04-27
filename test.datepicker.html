@@ -39,22 +39,29 @@
         </span>
     </div>
 
+    <div class="input-daterange input-group" id="datepicker">
+        <span class="input-group-addon">Dal</span>
+        <input type="text" class="input-sm form-control" name="start" />
+        <span class="input-group-addon">al</span>
+        <input type="text" class="input-sm form-control" name="end" />
+        <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+        </span>
+    </div>
+
     <!-- Bootstrap Javascript Core-->
 
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="js/docs.min.js"></script> -->
 
     <script>
-        $('.input-group.date').datepicker({
+        $('input').datepicker({
+            startDate: "today",
             todayBtn: "linked",
+            clearBtn: true,
             language: "it",
-            autoclose: true,
             todayHighlight: true,
-            defaultViewDate: {
-                year: 1977,
-                month: 04,
-                day: 25
-            }
+            datesDisabled: ['04/06/2015', '04/21/2015']
         });
     </script>
 
