@@ -41,6 +41,27 @@
     }
 }
 
+@media (min-width: 769px) {
+    .carousel-inner p {
+        font-size: 12px;
+    }
+    .carousel-inner h1 {
+        font-size: 22px;
+    }
+    .featurette {
+        margin-top: -35px;
+    }
+    .search-select {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right-width: 0;
+    }
+    .search-input {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
 @media (max-width: 500px) {
     .carousel-inner p {
         display: none;
