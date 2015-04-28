@@ -1,7 +1,6 @@
 /* Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) */
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400|PT+Sans+Caption:,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
 body {
     font-family: 'Roboto Slab', serif;
@@ -198,7 +197,8 @@ body {
 #descrizione {
     text-align: justify;
     font-size: 15px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'PT Sans Narrow',
+sans-serif;
     letter-spacing: 1px;
 }
 
