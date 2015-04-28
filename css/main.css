@@ -1,7 +1,10 @@
 /* Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) */
 
-@import {
-    url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400|PT+Sans+Caption:,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow:400|PT+Sans+Caption:,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300);
+body {
+    font-family: 'Roboto Slab', serif;
 }
 
 .marketing .col-sm-4 {
@@ -225,8 +228,8 @@
 
 #cit {
     font-family: 'PT Sans Narrow', sans-serif;
-    letter-spacing: 4px;
-    font-size: 30px;
+    letter-spacing: 2px;
+    font-size: 25px;
     color: rgba( 127, 127, 127, 0.291);
     text-shadow: 1px 1px #3d3d3d;
 }
