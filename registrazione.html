@@ -1,0 +1,172 @@
+<!--- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) --->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Glas Travels">
+    <meta name="description" content="La compagnia di viaggi #1 al mondo!">
+    <title>Glas Travels</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fontawesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- MapGlyphs -->
+    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+
+    <!-- Material Design iconic font -->
+    <link href="material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="background_body">
+
+        <!--- LOGO + HEADER + MENU --->
+
+        <div id="navbar"></div>
+
+        <!--- PAGE --->
+
+        <div class="container">
+
+            <!-- PATH ROW -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb" id="path">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li>Area Personale</li>
+                        <li class="active">Registrazione</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- PAGE CONTENT ROW -->
+
+            <div class="row">
+
+                <!-- SECTION CONTENT -->
+
+                <div class="col-md-12">
+
+                    <!-- DATI PERSONALI -->
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            <div class="pull-left">
+                                <h4>Dati personali</h4>
+                            </div>
+                            <div class="header-center">
+                            </div>
+                            <div class="pull-right">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="panel-body" align="middle">
+                            <img src="img/user-profile-picture-placeholder.jpg" class="purchase-item-thumbnail-register"/><br><br>
+                            <button class="btn btn-default">Carica</button><br><br>
+
+                            <div class="purchase-item-details">
+                                <table class="table">
+                                    <tr>
+                                        <td>Nome *</td>
+                                        <td><input size="50" type="text" name="nome"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cognome *</td>
+                                        <td><input size="50" type="text" name="cognome"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EMail *</td>
+                                        <td><input size="50" type="email" name="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Password *</td>
+                                        <td><input size="50" type="password" name="password"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Data di nascita</td>
+                                        <td><input size="50" type="date" name="nascita"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Codice fiscale</td>
+                                        <td><input size="50" type="text" name="codicefiscale" maxlength="16"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tipo documento</td>
+                                        <td><input size="50" type="text" name="docpersonale"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Numero documento</td>
+                                        <td><input size="50" type="text" name="numerodocpersonale"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Data di rilascio</td>
+                                        <td><input size="50" type="date" name="rilasciodocpersonale"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Data di scadenza</td>
+                                        <td><input size="50" type="date" name="scadenzadocpersonale"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cellulare</td>
+                                        <td><input size="50" type="tel" name="cellulare" type="number"></td>
+                                    </tr>
+                                </table>
+                                <p><a class="btn btn-default" href="profilo.html" role="button">Conferma</a></p>
+                                
+                                <br><br>
+                    
+                                <p align="left">* Campi obbligatori</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+
+        <div id="footer"></div>
+
+    </div>
+
+    <!-- Bootstrap Javascript Core-->
+
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/docs.min.js"></script> -->
+
+    <!-- scripts parts -->
+
+    <script>
+        $("#navbar").load("navbar.html");
+    </script>
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+
+</body>
+
+</html>
