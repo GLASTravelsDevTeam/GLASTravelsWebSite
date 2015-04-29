@@ -74,6 +74,9 @@ body {
     .featurette {
         margin-top: -40px;
     }
+    .slide_byline {
+        font-size: 0.8em;
+    }
 }
 
 .background_body {
@@ -249,15 +252,17 @@ body {
     position: absolute;
     width: 100%;
     zoom: 1;
+    text-align: center;
 }
 
 .slide_title {
     font-size: 1.2em;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .slide_byline {
-    font-size: 0.8em;
+    font-size: 1.0em;
     display: block;
 }
 
@@ -420,3 +425,8 @@ body {
     width: 200px;
     margin-top: 0px;
     margin-bottom: 15px;
+}
+
+.slider-button {
+    font-size: 10px;
+}
