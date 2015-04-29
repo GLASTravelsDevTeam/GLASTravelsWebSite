@@ -74,9 +74,6 @@ body {
     .featurette {
         margin-top: -40px;
     }
-    .slide_byline {
-        font-size: 0.8em;
-    }
 }
 
 .background_body {
@@ -253,15 +250,17 @@ body {
     width: 100%;
     zoom: 1;
     text-align: center;
+    font-weight: bold;
 }
 
 .slide_title {
     font-size: 1.2em;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .slide_byline {
+    @import url(http://fonts.googleapis.com/css?family=Montserrat);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.0em;
     display: block;
 }
