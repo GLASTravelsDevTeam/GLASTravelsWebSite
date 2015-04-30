@@ -51,7 +51,7 @@
                         <li><a href="index.html">Home</a>
                         </li>
                         <li>Area Personale</li>
-                        <li class="active">Profilo</li>
+                        <li class="active">Registrazione</li>
                     </ol>
                 </div>
             </div>
@@ -60,24 +60,9 @@
 
             <div class="row">
 
-                <div class="col-md-3">
-
-                    <!-- SIDE MENU -->
-
-                    <div class="list-group">
-                        <span class="list-group-item list-group-item-default">Area personale</span>
-                        <a href="profilo.html" class="list-group-item active"><i class="fa fa-user"></i> Profilo</a>
-                        <a href="carrello.html" class="list-group-item"><i class="fa fa-shopping-cart"></i><span class="badge">2</span> Carrello</a>
-                        <a href="acquisti.html" class="list-group-item"><i class="fa fa-credit-card"></i> I miei acquisti</a>
-                        <a href="recensioni.html" class="list-group-item"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
-                        <a href="impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
-                    </div>
-
-                </div>
-
                 <!-- SECTION CONTENT -->
 
-                <div class="col-md-9">
+                <div class="col-md-12">
 
                     <!-- DATI PERSONALI -->
 
@@ -95,112 +80,70 @@
                         </div>
 
                         <div class="panel-body" align="middle">
-                            <img src="img/user-profile-picture-placeholder.jpg" class="user-profile-image" alt="Immagine personale" />
-                            <p>
-                                <button class="btn btn-default">Cambia immagine</button>
-                            </p>
+                            <img src="img/user-profile-picture-placeholder.jpg" class="purchase-item-thumbnail"/><br><br>
+                            <button class="btn btn-default">Carica</button><br><br>
 
                             <div class="purchase-item-details">
                                 <table class="table">
                                     <tr>
                                         <td>e-mail</td>
-                                        <td>mario.rossi@email.it</td>
+                                        <td><input size="50" type="email" name="email" value="mario.rossi@email.it"></td>
                                     </tr>
                                     <tr>
                                         <td>Password</td>
-                                        <td>********************</td>
+                                        <td><input size="50" type="password" name="password"></td>
                                     </tr>
                                     <tr>
                                         <td>Titolo</td>
-                                        <td>Sig.</td>
+                                        <td><select name="titolo">
+                                            <option value="M">Sig.</option>
+                                            <option value="F">Sig.ra</option>
+                                        </select></td>
                                     </tr>
                                     <tr>
                                         <td>Nome</td>
-                                        <td>Mario</td>
+                                        <td><input responsive size="50" type="text" name="nome" value="Mario"></td>
                                     </tr>
                                     <tr>
                                         <td>Cognome</td>
-                                        <td>Rossi</td>
+                                        <td><input size="50" type="text" name="cognome" value="Rossi"></td>
                                     </tr>
                                     <tr>
                                         <td>Data di nascita</td>
-                                        <td>01/01/1980</td>
+                                        <td><input size="50" type="date" name="nascita" value="01/01/1980"></td>
                                     </tr>
                                     <tr>
                                         <td>Codice fiscale</td>
-                                        <td>RSSMRA80A01L736U</td>
+                                        <td><input size="50" type="text" name="codicefiscale" maxlength="16" value="RSSMRA80A01L736U"></td>
                                     </tr>
                                     <tr>
                                         <td>Indirizzo (residenza)</td>
-                                        <td>Via Torino 155</td>
+                                        <td><input size="50" type="text" name="indirizzo" value="Via Torino 155"></td>
                                     </tr>
                                     <tr>
                                         <td>C.A.P.</td>
-                                        <td>30170</td>
+                                        <td><input size="50" type="text" name="cap" value="30170"></td>
                                     </tr>
                                     <tr>
                                         <td>Città</td>
-                                        <td>Mestre</td>
+                                        <td><input size="50" type="text" name="citta" value="Mestre"></td>
                                     </tr>
                                     <tr>
                                         <td>Provincia</td>
-                                        <td>VE</td>
+                                        <td><input size="50" type="text" name="provincia" value="VE"></td>
                                     </tr>
                                     <tr>
                                         <td>Stato</td>
-                                        <td>Italia</td>
+                                        <td><input size="50" type="text" name="stato" value="Italia"></td>
                                     </tr>
                                     <tr>
                                         <td>Telefono (facoltativo)</td>
-                                        <td>3409876543</td>
+                                        <td><input size="50" type="tel" name="cellulare" type="number" value="3409876543"></td>
                                     </tr>
                                 </table>
-                                <p><a class="btn btn-default" href="profilo-modifica.html" role="button">Modifica informazioni</a></p>
+                                <p><a class="btn btn-default" href="profilo.html" role="button">Conferma</a></p>
+                                
                             </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ACCOUNT COLLEGATI -->
-
-                    <div class="panel panel-default">
-
-                        <div class="panel-heading">
-                            <div class="pull-left">
-                                <h4>Account collegati</h4>
-                            </div>
-                            <div class="header-center">
-                            </div>
-                            <div class="pull-right">
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <div class="panel-body">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-facebook-official" style="height: 25px"></i>
-                                    </td>
-                                    <td>
-                                        <p>pallino.pinco@facebook.com</p>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-default">Scollega account</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="fa fa-twitter" style="height: 25px"></i>
-                                    </td>
-                                    <td>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-default">Collega account</button>
-                                    </td>
-                                </tr>
-                            </table>
 
                         </div>
 
