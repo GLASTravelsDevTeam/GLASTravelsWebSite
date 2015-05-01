@@ -105,7 +105,79 @@
             <!-- DATE PICKER -->
 
             <div class="container marketing">
-                <div class="input-daterange input-group hidden-xs">
+                <form>
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend id="prenotazione">Prenota al volo il tuo viaggio!</legend>
+
+                        <!-- Multiple Radios -->
+                        <div class="row">
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="selectbasic">Quanti adulti siete?</label>
+                                <div class="col-md-3">
+                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">4+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="selectbasic">Quanti bambini?</label>
+                                <div class="col-md-3">
+                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                        <option value="1">Nessuno</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                        <option value="5">3+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="selectbasic">Camera?</label>
+                                <div class="col-md-3">
+                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                        <option value="1">Standard</option>
+                                        <option value="2">Classic</option>
+                                        <option value="3">Superior</option>
+                                        <option value="4">Suite</option>
+                                        <option value="5">Appartamento</option>
+                                        <option value="6">Casa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="radios">Hai un animale domestico?</label>
+                                <div class="col-md-3">
+                                    <div class="radio">
+                                        <label for="radios-0">
+                                            <input name="radios" id="radios-0" value="1" checked="checked" type="radio"> No
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="radios-1">
+                                            <input name="radios" id="radios-1" value="2" type="radio"> Sì
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end Row -->
+
+                    </fieldset>
+                </form>
+                <label>Seleziona le date del tuo viaggio.</label>
+                <div class="input-daterange input-group">
                     <span class="input-group-addon">Dal</span>
                     <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" />
                     <span class="input-group-addon">al</span>
@@ -114,7 +186,9 @@
                     <i class="fa fa-calendar"></i>
                 </span>
                 </div>
-
+                <br>
+                <a class="btn btn-info pull-right" href="/viaggi/acquisto-offerta.html" role="button">Prenota subito</a>
+                <br>
                 <hr>
 
                 <!-- CONTINENTI -->
@@ -186,7 +260,6 @@
                         <h4 class="featurette-heading"><em>Che cosa dicono di noi. </em><span class="text-muted">Wired Magazine</span></h4>
                         <p class="lead">Chi gestisce il sito è molto efficiente. In due giorni, il viaggio dei propri sogni è bello che prenotato. <em>Glas Travels</em> scalerà sicuramente le classifiche per il miglior TOP TRAVEL SITE.
                             <br>
-                            <br><a class="btn btn-default" href="recensioni.html" role="button">Vedi le altre recensioni</a>
                         </p>
                     </div>
                     <div class="col-sm-5 hidden-xs">

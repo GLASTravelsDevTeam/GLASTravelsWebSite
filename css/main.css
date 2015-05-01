@@ -429,3 +429,9 @@ body {
 .slider-button {
     font-size: 10px;
 }
+
+#prenotazione {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
