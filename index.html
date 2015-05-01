@@ -41,6 +41,11 @@
 
     <!-- Date Picker -->
     <script src="http://eternicode.github.io/bootstrap-datepicker/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    
+    <script type="text/javascript">function showMe (it, box) { 
+    var vis = (box.checked) ? "block" : "none"; 
+    document.getElementById(it).style.display = vis;
+    }</script>
 
 </head>
 
@@ -110,14 +115,14 @@
                         <fieldset>
                             <!-- Form Name -->
                             <div class="col-md-12">
-                                <legend id="prenotazione">Prenota al volo il tuo viaggio!</legend>
+                            <div align="center"><legend id="prenotazione">PRENOTA AL VOLO IL TUO VIAGGIO!</legend></div>
                             </div>
 
                             <!-- Seleziona viaggio -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="selectbasic">Destinazione:</label>
                                 <div class="col-md-12">
-                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                    <select id="selectbasic" name="selectbasic" class="form-control" value="11">
                                         <optgroup label="Africa" data-max-options="2">
                                             <option value="1">Cape Town</option>
                                             <option value="2">Egitto</option>
@@ -125,21 +130,22 @@
                                         <optgroup label="America" data-max-options="2">
                                             <option value="3">Isola di Pasqua</option>
                                             <option value="4">Las Vegas</option>
-                                            <option value="5">Rio De Janeiro</option>
+                                            <option value="5">Ottawa</option>
+                                            <option value="6">Rio De Janeiro</option>
                                         </optgroup>
                                         <optgroup label="Asia" data-max-options="2">
-                                            <option value="6">Shangai</option>
-                                            <option value="7">Tokyo</option>
+                                            <option value="7">Shanghai</option>
+                                            <option value="8">Tokyo</option>
                                         </optgroup>
                                         <optgroup label="Europa" data-max-options="2">
-                                            <option value="8">Barcellona</option>
-                                            <option value="9">Berlino</option>
-                                            <option value="10" class="active">Parigi</option>
-                                            <option value="11">Venezia</option>
+                                            <option value="9">Barcellona</option>
+                                            <option value="10">Berlino</option>
+                                            <option value="11" selected="selected">Parigi</option>
+                                            <option value="12">Venezia</option>
                                         </optgroup>
                                         <optgroup label="Oceania" data-max-options="2">
-                                            <option value="12">Isole Fiji</option>
-                                            <option value="13">Sydney</option>
+                                            <option value="13">Isole Fiji</option>
+                                            <option value="14">Sydney</option>
                                         </optgroup>
                                     </select>
                                     <br>
@@ -193,17 +199,22 @@
 
                             <!-- Selezione animale domestico -->
                             <div class="form-group">
-                                <label class="col-md-3 control-label" for="radios">Hai un animale domestico?</label>
+                                <label class="col-md-3 control-label" for="radios">Animali domestici:</label>
                                 <div class="col-md-3">
-                                    <div class="radio">
-                                        <label for="radios-0">
-                                            <input name="radios" id="radios-0" value="1" checked="checked" type="radio"> No
-                                        </label>
-                                        <label for="radios-1">
-                                            <input name="radios" id="radios-1" value="2" type="radio"> Sì
-                                        </label>
+                                    <form>
+                                    <input type="checkbox" name="modtype" value="checboxanimali" onclick="showMe('animali', this)" /> selezionare ed indicare il numero
+                                    <div id="animali" style="display:none">
+                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">4+</option>
+                                    </select>
                                     </div>
+                                    </form>
                                 </div>
+                                <br>
                             </div>
 
                             <!-- Selezione date -->
