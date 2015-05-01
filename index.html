@@ -107,7 +107,6 @@
             <div class="container marketing">
                 <form>
                     <fieldset>
-
                         <!-- Form Name -->
                         <legend id="prenotazione">Prenota al volo il tuo viaggio!</legend>
 
@@ -115,7 +114,7 @@
                         <div class="row">
                             <!-- Select Basic -->
                             <div class="form-group">
-                                <label class="col-md-3 control-label" for="selectbasic">Quanti adulti siete?</label>
+                                <label class="col-md-3 control-label" for="selectbasic">Numero adulti:</label>
                                 <div class="col-md-3">
                                     <select id="selectbasic" name="selectbasic" class="form-control">
                                         <option value="1">1</option>
@@ -129,7 +128,7 @@
 
                             <!-- Select Basic -->
                             <div class="form-group">
-                                <label class="col-md-3 control-label" for="selectbasic">Quanti bambini?</label>
+                                <label class="col-md-3 control-label" for="selectbasic">Numero bambini:</label>
                                 <div class="col-md-3">
                                     <select id="selectbasic" name="selectbasic" class="form-control">
                                         <option value="1">Nessuno</option>
@@ -143,7 +142,7 @@
 
                             <!-- Select Basic -->
                             <div class="form-group">
-                                <label class="col-md-3 control-label" for="selectbasic">Camera?</label>
+                                <label class="col-md-3 control-label" for="selectbasic">Tipo di camera:</label>
                                 <div class="col-md-3">
                                     <select id="selectbasic" name="selectbasic" class="form-control">
                                         <option value="1">Standard</option>
@@ -162,8 +161,6 @@
                                         <label for="radios-0">
                                             <input name="radios" id="radios-0" value="1" checked="checked" type="radio"> No
                                         </label>
-                                    </div>
-                                    <div class="radio">
                                         <label for="radios-1">
                                             <input name="radios" id="radios-1" value="2" type="radio"> Sì
                                         </label>
@@ -173,21 +170,18 @@
 
                         </div>
                         <!-- end Row -->
-
-                    </fieldset>
+                        <label>Seleziona le date del tuo viaggio.</label>
+                        <div class="input-daterange input-group">
+                            <span class="input-group-addon">Dal</span>
+                            <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" />
+                            <span class="input-group-addon">al</span>
+                            <input type="text" class="input-sm form-control" name="end" id="datepicker-al" />
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        </div>
                 </form>
-                <label>Seleziona le date del tuo viaggio.</label>
-                <div class="input-daterange input-group">
-                    <span class="input-group-addon">Dal</span>
-                    <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" />
-                    <span class="input-group-addon">al</span>
-                    <input type="text" class="input-sm form-control" name="end" id="datepicker-al" />
-                    <span class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
-                </span>
-                </div>
+                </fieldset>
                 <br>
-                <a class="btn btn-info pull-right" href="/viaggi/acquisto-offerta.html" role="button">Prenota subito</a>
+                <a class="btn btn-info pull-right" href="/viaggi/acquisto-viaggio.html" role="button">Prenota subito</a>
                 <br>
                 <hr>
 
