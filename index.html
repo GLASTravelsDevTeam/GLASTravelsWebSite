@@ -105,14 +105,47 @@
             <!-- DATE PICKER -->
 
             <div class="container marketing">
-                <form>
-                    <fieldset>
-                        <!-- Form Name -->
-                        <legend id="prenotazione">Prenota al volo il tuo viaggio!</legend>
+                <div class="row" id="bookingform">
+                    <form>
+                        <fieldset>
+                            <!-- Form Name -->
+                            <div class="col-md-12">
+                                <legend id="prenotazione">Prenota al volo il tuo viaggio!</legend>
+                            </div>
 
-                        <!-- Multiple Radios -->
-                        <div class="row">
-                            <!-- Select Basic -->
+                            <!-- Seleziona viaggio -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="selectbasic">Destinazione:</label>
+                                <div class="col-md-12">
+                                    <select id="selectbasic" name="selectbasic" class="form-control">
+                                        <optgroup label="Africa" data-max-options="2">
+                                            <option value="1">Cape Town</option>
+                                            <option value="2">Egitto</option>
+                                        </optgroup>
+                                        <optgroup label="America" data-max-options="2">
+                                            <option value="3">Isola di Pasqua</option>
+                                            <option value="4">Las Vegas</option>
+                                            <option value="5">Rio De Janeiro</option>
+                                        </optgroup>
+                                        <optgroup label="Asia" data-max-options="2">
+                                            <option value="6">Shangai</option>
+                                            <option value="7">Tokyo</option>
+                                        </optgroup>
+                                        <optgroup label="Europa" data-max-options="2">
+                                            <option value="8">Barcellona</option>
+                                            <option value="9">Berlino</option>
+                                            <option value="10" class="active">Parigi</option>
+                                            <option value="11">Venezia</option>
+                                        </optgroup>
+                                        <optgroup label="Oceania" data-max-options="2">
+                                            <option value="12">Isole Fiji</option>
+                                            <option value="13">Sydney</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Selezione adulti -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="selectbasic">Numero adulti:</label>
                                 <div class="col-md-3">
@@ -126,7 +159,7 @@
                                 </div>
                             </div>
 
-                            <!-- Select Basic -->
+                            <!-- Selezione bambni -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="selectbasic">Numero bambini:</label>
                                 <div class="col-md-3">
@@ -140,9 +173,9 @@
                                 </div>
                             </div>
 
-                            <!-- Select Basic -->
+                            <!-- Selezione alloggio -->
                             <div class="form-group">
-                                <label class="col-md-3 control-label" for="selectbasic">Tipo di camera:</label>
+                                <label class="col-md-3 control-label" for="selectbasic">Tipo di alloggio:</label>
                                 <div class="col-md-3">
                                     <select id="selectbasic" name="selectbasic" class="form-control">
                                         <option value="1">Standard</option>
@@ -154,6 +187,8 @@
                                     </select>
                                 </div>
                             </div>
+
+                            <!-- Selezione animale domestico -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label" for="radios">Hai un animale domestico?</label>
                                 <div class="col-md-3">
@@ -168,26 +203,26 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <!-- end Row -->
-                        <label>Seleziona le date del tuo viaggio.</label>
-                        <div class="input-daterange input-group">
-                            <span class="input-group-addon">Dal</span>
-                            <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" />
-                            <span class="input-group-addon">al</span>
-                            <input type="text" class="input-sm form-control" name="end" id="datepicker-al" />
-                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                        </div>
-                </form>
-                </fieldset>
-                <br>
-                <a class="btn btn-info pull-right" href="/viaggi/acquisto-viaggio.html" role="button">Prenota subito</a>
-                <br>
+                            <!-- Selezione date -->
+                            <div class="col-md-12">
+                                <label>Seleziona le date del tuo viaggio:</label>
+                                <div class="input-daterange input-group">
+                                    <span class="input-group-addon">Dal</span>
+                                    <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" />
+                                    <span class="input-group-addon">al</span>
+                                    <input type="text" class="input-sm form-control" name="end" id="datepicker-al" />
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                            <br>
+                            <a class="btn btn-info pull-right" href="/viaggi/acquisto-viaggio.html" role="button">Prenota subito</a>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- end Row -->
                 <hr>
 
                 <!-- CONTINENTI -->
-
-
 
                 <div class="row">
 
