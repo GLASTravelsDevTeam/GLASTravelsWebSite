@@ -161,7 +161,7 @@
                                 <div class="col-md-3">
                                     <select id="selectbasic" name="selectbasic" class="form-control">
                                         <option value="1">1</option>
-                                        <option value="2">2</option>
+                                        <option value="2" selected="selected">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
                                         <option value="5">4+</option>
@@ -206,16 +206,16 @@
                                 <label class="col-md-3 control-label" for="radios">Animali domestici:</label>
                                 <div class="col-md-3">
                                     <form>
-                                    <input type="checkbox" name="modtype" value="checboxanimali" onclick="showMe('animali', this)" /> selezionare ed indicare il numero
-                                    <div id="animali" style="display:none">
-                                    <select id="selectbasic" name="selectbasic" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">4+</option>
-                                    </select>
-                                    </div>
+                                        <input type="checkbox" name="modtype" value="checboxanimali" onclick="showMe('animali', this)" /> selezionare ed indicare il numero
+                                        <div id="animali" style="display:none">
+                                            <select id="selectbasic" name="selectbasic" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">4+</option>
+                                            </select>
+                                        </div>
                                     </form>
                                 </div>
                                 <br>
@@ -233,8 +233,9 @@
                                 </div>
                             </div>
                         </fieldset>
-                            <br>
-                            <div align="center"><a class="btn btn-info" href="/viaggi/acquisto-viaggio.html" role="button">Prenota subito</a></div>
+                        <br>
+                        <div align="center"><a class="btn btn-info" href="/viaggi/acquisto-viaggio.html" role="button">Prenota subito</a>
+                        </div>
                     </form>
                 </div>
                 <!-- end Row -->
