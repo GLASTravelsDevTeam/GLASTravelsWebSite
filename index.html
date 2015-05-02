@@ -300,101 +300,100 @@
             <!-- TESTIMONIALS + AZIENDA -->
 
             <br>
+            <!-- TESTIMONIALS -->
+
+            <div class="row" align="center">
+                <h1 id="logo">i nostri testimonials</h1>
+            </div>
             <div class="container featurette">
 
                 <hr class="featurette-divider">
                 <br>
 
-                <!-- TESTIMONIALS -->
+                <div class="col-md-12">
+                    <div id="testimonials" class="hidden-xs"></div>
 
-                <div class="row feauturette">
-                    <div class="col-md-12">
-                        <div align="center">
-                            <h1 id="logo">i nostri testimonials</h1>
-                            <div id="testimonials"></div>
+                    <div class="row featurette visible-xs">
+                        <div class="col-sm-7">
+                            <h4 class="featurette-heading"><em>Che cosa dicono di noi. </em><span class="text-muted">Wired Magazine</span></h4>
+                            <p class="lead">Chi gestisce il sito è molto efficiente. In due giorni, il viaggio dei propri sogni è bello che prenotato. <em>Glas Travels</em> scalerà sicuramente le classifiche per il miglior TOP TRAVEL SITE.
+                                <br>
+                            </p>
                         </div>
-
-                        <div class="row featurette">
-                            <div class="col-sm-7">
-                                <h4 class="featurette-heading"><em>Che cosa dicono di noi. </em><span class="text-muted">Wired Magazine</span></h4>
-                                <p class="lead">Chi gestisce il sito è molto efficiente. In due giorni, il viaggio dei propri sogni è bello che prenotato. <em>Glas Travels</em> scalerà sicuramente le classifiche per il miglior TOP TRAVEL SITE.
-                                    <br>
-                                </p>
-                            </div>
-                            <div class="col-sm-5 hidden-xs">
-                                <img class="featurette-image img-responsive" src="img/Wired_logo.png" alt="Wired logo">
-                            </div>
+                        <div class="col-sm-5 hidden-xs">
+                            <img class="featurette-image img-responsive" src="img/Wired_logo.png" alt="Wired logo">
                         </div>
+                    </div>
 
+                    <hr class="featurette-divider">
+                    <br>
+
+                    <div class="row featurette hidden-xs">
+                        <div class="row" id="Robert">
+                            <p id="cit"><i class="fa fa-quote-left"></i> Io viaggio non per andare da qualche parte, ma per andare. Viaggio per viaggiare… <i class="fa fa-quote-right"></i>
+                            </p>
+                            <p class="lead">-<em>Robert Louis Stevenson</em>
+                            </p>
+                        </div>
                         <hr class="featurette-divider">
                         <br>
-
-                        <div class="row featurette hidden-xs">
-                            <div class="row" id="Robert">
-                                <p id="cit"><i class="fa fa-quote-left"></i> Io viaggio non per andare da qualche parte, ma per andare. Viaggio per viaggiare… <i class="fa fa-quote-right"></i>
-                                </p>
-                                <p class="lead">-<em>Robert Louis Stevenson</em>
-                                </p>
-                            </div>
-                            <hr class="featurette-divider">
-                            <br>
+                    </div>
+                    <div class="row featurette">
+                        <div class="col-sm-5 hidden-xs">
+                            <img class="featurette-image img-responsive" src="img/GlasTravelsLOGO.png" alt="Logo Glas Travels">
                         </div>
-                        <div class="row featurette">
-                            <div class="col-sm-5 hidden-xs">
-                                <img class="featurette-image img-responsive" src="img/GlasTravelsLOGO.png" alt="Logo Glas Travels">
-                            </div>
-                            <div class="col-sm-7">
-                                <h4 class="featurette-heading"><em id="logo_featurette">Glas Travels </em> <span class="text-muted">Chi siamo.</span></h4>
-                                <p>Compagnia di viaggi da poco sul mercato, che già non ha tradito i clienti che l'hanno scelta.
-                                    <br>Viaggi all’insegna della conoscenza approfondita di una destinazione, viaggi pensati per suscitare emozioni e liberare fantasie. Itinerari che conducono attraverso storia, tecnologia e abitudini. Venite con noi, con la nostra passione, a riscoprire cosa si trova nel mondo! E ricordate: non come turisti, ma come ospiti!
-                                    <br>
-                                    <br><a class="btn btn-default" href="chi_siamo.html" role="button">Scopri di più su di noi</a>
-                                </p>
-                            </div>
+                        <div class="col-sm-7">
+                            <h4 class="featurette-heading"><em id="logo_featurette">Glas Travels </em> <span class="text-muted">Chi siamo.</span></h4>
+                            <p>Compagnia di viaggi da poco sul mercato, che già non ha tradito i clienti che l'hanno scelta.
+                                <br>Viaggi all’insegna della conoscenza approfondita di una destinazione, viaggi pensati per suscitare emozioni e liberare fantasie. Itinerari che conducono attraverso storia, tecnologia e abitudini. Venite con noi, con la nostra passione, a riscoprire cosa si trova nel mondo! E ricordate: non come turisti, ma come ospiti!
+                                <br>
+                                <br><a class="btn btn-default" href="chi_siamo.html" role="button">Scopri di più su di noi</a>
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <!-- FOOTER -->
-
-                <div id="footer"></div>
-
             </div>
 
-            <!-- Bootstrap Javascript Core-->
+            <!-- FOOTER -->
 
-            <script src="js/bootstrap.min.js"></script>
-            <!-- <script src="js/docs.min.js"></script> -->
+            <div id="footer"></div>
 
-            <!-- scripts parts -->
+        </div>
 
-            <script>
-                $("#navbar").load("navbar.html");
-            </script>
-            <script>
-                $("#testimonials").load("testimonials.html");
-            </script>
-            <script>
-                $("#footer").load("footer.html");
-            </script>
-            <script>
-                $('#datepicker-dal').datepicker({
-                    todayBtn: "linked",
-                    language: "it",
-                    autoclose: true,
-                    todayHighlight: true,
-                    format: "dd/mm/yyyy",
-                });
-            </script>
-            <script>
-                $('#datepicker-al').datepicker({
-                    todayBtn: "linked",
-                    language: "it",
-                    autoclose: true,
-                    todayHighlight: true,
-                    format: "dd/mm/yyyy",
-                });
-            </script>
+        <!-- Bootstrap Javascript Core-->
+
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/docs.min.js"></script> -->
+
+        <!-- scripts parts -->
+
+        <script>
+            $("#navbar").load("navbar.html");
+        </script>
+        <script>
+            $("#testimonials").load("testimonials.html");
+        </script>
+        <script>
+            $("#footer").load("footer.html");
+        </script>
+        <script>
+            $('#datepicker-dal').datepicker({
+                todayBtn: "linked",
+                language: "it",
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd/mm/yyyy",
+            });
+        </script>
+        <script>
+            $('#datepicker-al').datepicker({
+                todayBtn: "linked",
+                language: "it",
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd/mm/yyyy",
+            });
+        </script>
 
 </body>
 
