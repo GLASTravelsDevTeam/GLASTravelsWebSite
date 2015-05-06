@@ -15,20 +15,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Main CSS -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
     <!-- FontAwesome -->
-    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="fontawesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/fontawesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- MapGlyphs -->
-    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+    <link href="/mapglyphs/mapglyphs.css" rel="stylesheet">
 
     <!-- Material Design iconic font -->
-    <link href="material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
+    <link href="/material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">    
+    
+    <!-- Image Gallery -->
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
 
 </head>
 
@@ -48,7 +52,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ol class="breadcrumb" id="path">
-                        <li><a href="index.html">Home</a>
+                        <li><a href="/index.html">Home</a>
                         </li>
                         <li>Area Personale</li>
                         <li class="active">Le mie recensioni</li>
@@ -66,11 +70,11 @@
 
                     <div class="list-group">
                         <span class="list-group-item list-group-item-default">Area personale</span>
-                        <a href="profilo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo</a>
-                        <a href="carrello.html" class="list-group-item"><i class="fa fa-shopping-cart"></i><span class="badge">1</span> Carrello</a>
-                        <a href="acquisti.html" class="list-group-item"><i class="md md-credit-card"></i> I miei acquisti</a>
-                        <a href="recensioni_paginaprofilo.html" class="list-group-item active"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
-                        <a href="impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
+                        <a href="/profilo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo</a>
+                        <a href="/carrello.html" class="list-group-item"><i class="fa fa-shopping-cart"></i><span class="badge">1</span> Carrello</a>
+                        <a href="/acquisti.html" class="list-group-item"><i class="md md-credit-card"></i> I miei acquisti</a>
+                        <a href="/recensioni/profilo_parigi.html" class="list-group-item active"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
+                        <a href="/impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
                     </div>
 
                 </div>
@@ -78,40 +82,34 @@
                 <!-- SECTION CONTENT -->
 
                 <div class="col-md-9">
-                    
-                    <!-- MALDIVE -->
+
+
+                    <!-- PARIGI -->
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="pull-left">
-                                <h4>Maldive</h4>
+                                <h4>Parigi</h4>
                             </div>
                             <div class="header-center">
                             </div>
                             <div class="pull-right">
-                                <h4>30-07-2014</h4>
+                                <h4>08-05-2015</h4>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
-                            <img src="img/maldive550x550.jpg" alt="Immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
+                            <img src="/img/parigi550x550.jpg" alt="Immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
 
                             <div class="purchase-item-details">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <hr style="margin-bottom: 5px;" />
+                                <hr style="margin-top: 15px; margin-bottom: 15px;"/>
                                 <div>
-                                    <img class="review-upload-thumnb" alt="Immagine caricata dall'autore della recensione" src="img/maldive_mocked_upload_1.png" />
-                                    <img class="review-upload-thumnb" alt="Immagine caricata dall'autore della recensione" src="img/maldive_mocked_upload_2.png" />
-                                    <img class="review-upload-thumnb" alt="Immagine caricata dall'autore della recensione" src="img/maldive_mocked_upload_3.png" />
-                                    <img class="review-upload-thumnb" alt="Immagine caricata dall'autore della recensione" src="img/maldive_mocked_upload_4.png" />
+                                <a class="btn btn-warning pull-left" href="/recensioni/profilo_parigi_modifica.html" role="button">Modifica</a>
+                                <a class="btn btn-default pull-right" href="/recensioni/profilo_vuoto.html" role="button">Rimuovi</a>
                                 </div>
-                                <hr />
-                                <div>
-                                <a class="btn btn-default" href="/recensioni_paginaprofilo_conparigi.html" role="button">Modifica</a>
-                                <a class="btn btn-warning" href="/recensioni_paginaprofilo_vuota.html" role="button">Rimuovi</a>
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
@@ -128,16 +126,21 @@
 
     <!-- Bootstrap Javascript Core-->
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <!-- <script src="js/docs.min.js"></script> -->
     <!-- scripts parts -->
 
     <script>
-        $("#navbar").load("navbar.html");
+        $("#navbar").load("/navbar.html");
     </script>
     <script>
-        $("#footer").load("footer.html");
+        $("#footer").load("/footer.html");
     </script>
+        
+    <!-- scripts image gallery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="/js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 
