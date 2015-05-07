@@ -83,66 +83,193 @@
                             <img src="img/user-profile-picture-placeholder.jpg" class="purchase-item-thumbnail"/><br><br>
                             <button class="btn btn-default">Carica</button><br><br>
 
-                            <div class="purchase-item-details">
-                                <table class="table">
-                                    <tr>
-                                        <td>e-mail</td>
-                                        <td><input size="50" type="email" name="email"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Password</td>
-                                        <td><input size="50" type="password" name="password"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Titolo</td>
-                                        <td><select name="titolo">
-                                            <option value="M">Sig.</option>
-                                            <option value="F">Sig.ra</option>
-                                        </select></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nome</td>
-                                        <td><input responsive size="50" type="text" name="nome"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cognome</td>
-                                        <td><input size="50" type="text" name="cognome"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Data di nascita</td>
-                                        <td><input size="50" type="date" name="nascita"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Codice fiscale</td>
-                                        <td><input size="50" type="text" name="codicefiscale" maxlength="16"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Indirizzo (residenza)</td>
-                                        <td><input size="50" type="text" name="indirizzo"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>C.A.P.</td>
-                                        <td><input size="50" type="text" name="cap"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Città</td>
-                                        <td><input size="50" type="text" name="citta"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Provincia</td>
-                                        <td><input size="50" type="text" name="provincia"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Stato</td>
-                                        <td><input size="50" type="text" name="stato"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Telefono (facoltativo)</td>
-                                        <td><input size="50" type="tel" name="cellulare" type="number"></td>
-                                    </tr>
-                                </table>
-                                <p><a class="btn btn-default" href="profilo.html" role="button">Registrati</a></p>
-                                
+                            <!-- non visibile su layout a bassa risoluzione: hidden-xs -->
+                            
+                            <div class="purchase-item-details hidden-xs">
+                                <form>
+                                    <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <br>
+                                        <tr>
+                                            <td>e-mail</td>
+                                            <td><input size="50" type="email" name="email" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Password</td>
+                                            <td><input size="50" type="password" name="password" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Titolo</td>
+                                            <td><select name="titolo">
+                                                <option value="F">Sig.ra</option>
+                                                <option value="M">Sig.</option>
+                                            </select></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td><input responsive size="50" type="text" name="nome" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cognome</td>
+                                            <td><input size="50" type="text" name="cognome" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data di nascita</td>
+                                            <td><input size="50" type="date" name="nascita" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Codice fiscale</td>
+                                            <td><input size="50" type="text" name="codicefiscale" maxlength="16" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Indirizzo (residenza)</td>
+                                            <td><input size="50" type="text" name="indirizzo" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>C.A.P.</td>
+                                            <td><input size="50" type="text" name="cap" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Città</td>
+                                            <td><input size="50" type="text" name="citta" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Provincia</td>
+                                            <td><input size="50" type="text" name="provincia" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stato</td>
+                                            <td><input size="50" type="text" name="stato" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Telefono (facoltativo)</td>
+                                            <td><input size="50" type="tel" name="cellulare" type="number"></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                    <input type="submit"  class="btn btn-default" value="Conferma" formaction="profilo.html">
+                                </form>
+                            </div>
+
+                            <!-- visibile su layout a bassa risoluzione: visible-xs -->
+                            
+                            <div class="purchase-item-details visible-xs">
+                                <form>
+                                    <div class="table-responsive">
+                                        <br>
+                                        <tr>
+                                            <td>e-mail</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="email" name="email" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Password</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="password" name="password" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Titolo</td>
+                                        <tr>
+                                        <br>
+                                        <tr>
+                                            <td><select name="titolo">
+                                                <option value="F">Sig.ra</option>
+                                                <option value="M">Sig.</option>
+                                            </select></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Nome</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input responsive size="50" type="text" name="nome" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Cognome</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="cognome" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Data di nascita</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="date" name="nascita" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Codice fiscale</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="codicefiscale" maxlength="16" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Indirizzo (residenza)</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="indirizzo" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>C.A.P.</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="cap" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Città</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="citta" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Provincia</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="provincia" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Stato</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="stato" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Telefono (facoltativo)</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="tel" name="cellulare" type="number"></td>
+                                        </tr>
+                                        <br><br>
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                    <input type="submit"  class="btn btn-default" value="Registrati" formaction="profilo.html">
+                                </form>
                             </div>
 
                         </div>

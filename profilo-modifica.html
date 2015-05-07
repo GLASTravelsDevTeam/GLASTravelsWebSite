@@ -98,66 +98,193 @@
                             <img src="img/user-profile-picture-placeholder.jpg" class="purchase-item-thumbnail"/><br><br>
                             <button class="btn btn-default">Carica</button><br><br>
 
-                            <div class="purchase-item-details">
-                                <table class="table">
-                                    <tr>
-                                        <td>e-mail</td>
-                                        <td><input size="50" type="email" name="email" value="mario.rossi@email.it"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Password</td>
-                                        <td><input size="50" type="password" name="password"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Titolo</td>
-                                        <td><select name="titolo">
-                                            <option value="M">Sig.</option>
-                                            <option value="F">Sig.ra</option>
-                                        </select></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nome</td>
-                                        <td><input responsive size="50" type="text" name="nome" value="Mario"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cognome</td>
-                                        <td><input size="50" type="text" name="cognome" value="Rossi"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Data di nascita</td>
-                                        <td><input size="50" type="date" name="nascita" value="01/01/1980"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Codice fiscale</td>
-                                        <td><input size="50" type="text" name="codicefiscale" maxlength="16" value="RSSMRA80A01L736U"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Indirizzo (residenza)</td>
-                                        <td><input size="50" type="text" name="indirizzo" value="Via Torino 155"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>C.A.P.</td>
-                                        <td><input size="50" type="text" name="cap" value="30170"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Città</td>
-                                        <td><input size="50" type="text" name="citta" value="Mestre"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Provincia</td>
-                                        <td><input size="50" type="text" name="provincia" value="VE"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Stato</td>
-                                        <td><input size="50" type="text" name="stato" value="Italia"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Telefono (facoltativo)</td>
-                                        <td><input size="50" type="tel" name="cellulare" type="number" value="3409876543"></td>
-                                    </tr>
-                                </table>
-                                <p><a class="btn btn-default" href="profilo.html" role="button">Conferma</a></p>
-                                
+                            <!-- non visibile su layout a bassa risoluzione: hidden-xs -->
+                            
+                            <div class="purchase-item-details hidden-xs">
+                                <form>
+                                    <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                        <br>
+                                        <tr>
+                                            <td>e-mail</td>
+                                            <td><input size="50" type="email" name="email" value="elena.colombo@email.it" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Password</td>
+                                            <td><input size="50" type="password" name="password" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Titolo</td>
+                                            <td><select name="titolo">
+                                                <option value="F">Sig.ra</option>
+                                                <option value="M">Sig.</option>
+                                            </select></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td><input responsive size="50" type="text" name="nome" value="Elena" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cognome</td>
+                                            <td><input size="50" type="text" name="cognome" value="Colombo" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data di nascita</td>
+                                            <td><input size="50" type="date" name="nascita" value="1980-01-01" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Codice fiscale</td>
+                                            <td><input size="50" type="text" name="codicefiscale" maxlength="16" value="CLMLNE80A41L736J" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Indirizzo (residenza)</td>
+                                            <td><input size="50" type="text" name="indirizzo" value="via Monte Fato, 1" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>C.A.P.</td>
+                                            <td><input size="50" type="text" name="cap" value="30170" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Città</td>
+                                            <td><input size="50" type="text" name="citta" value="Mestre" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Provincia</td>
+                                            <td><input size="50" type="text" name="provincia" value="VE" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stato</td>
+                                            <td><input size="50" type="text" name="stato" value="Italia" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Telefono (facoltativo)</td>
+                                            <td><input size="50" type="tel" name="cellulare" type="number" value="0123456789"></td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                    <input type="submit"  class="btn btn-default" value="Conferma" formaction="profilo.html">
+                                </form>
+                            </div>
+
+                            <!-- visibile su layout a bassa risoluzione: visible-xs -->
+                            
+                            <div class="purchase-item-details visible-xs">
+                                <form>
+                                    <div class="table-responsive">
+                                        <br>
+                                        <tr>
+                                            <td>e-mail</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="email" name="email" value="elena.colombo@email.it" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Password</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="password" name="password" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Titolo</td>
+                                        <tr>
+                                        <br>
+                                        <tr>
+                                            <td><select name="titolo">
+                                                <option value="F">Sig.ra</option>
+                                                <option value="M">Sig.</option>
+                                            </select></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Nome</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input responsive size="50" type="text" name="nome" value="Elena" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Cognome</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="cognome" value="Colombo" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Data di nascita</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="date" name="nascita" value="1980-01-01" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Codice fiscale</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="codicefiscale" maxlength="16" value="CLMLNE80A41L736J" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Indirizzo (residenza)</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="indirizzo" value="via Monte Fato, 1" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>C.A.P.</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="cap" value="30170" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Città</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="citta" value="Mestre" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Provincia</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="provincia" value="VE" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Stato</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="text" name="stato" value="Italia" required></td>
+                                        </tr>
+                                        <br><br>
+                                        <tr>
+                                            <td>Telefono (facoltativo)</td>
+                                        </tr>
+                                        <br>
+                                        <tr>
+                                            <td><input size="50" type="tel" name="cellulare" type="number" value="0123456789"></td>
+                                        </tr>
+                                        <br><br>
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                    <input type="submit"  class="btn btn-default" value="Conferma" formaction="profilo.html">
+                                </form>
                             </div>
 
                         </div>
