@@ -1,4 +1,4 @@
-<!--- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) --->
+<!-- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) -->
 
 <!DOCTYPE html>
 <html lang="it">
@@ -36,7 +36,7 @@
 <body>
     <div class="background_body">
 
-        <!--- NAVBAR --->
+        <!-- NAVBAR -->
 
         <div id="navbar"></div>
 
@@ -205,28 +205,30 @@
                 </div>
             </div>
         </div>
+        
+        
         <!-- FOOTER -->
 
         <div id="footer"></div>
-
-        <!-- Bootstrap Javascript Core-->
-
-        <script src="js/bootstrap.min.js"></script>
-        <!-- <script src="js/docs.min.js"></script> -->
-
-        <!-- scripts parts -->
-
-        <script>
-            $("#navbar").load("navbar.html");
-        </script>
-        <script>
-            $("#footer").load("footer.html");
-        </script>
-        <script>
-            $("#sidebar").load("sidebar.html");
-        </script>
-
+        
     </div>
+
+        
+    <!-- SCRIPTS -->
+
+    <!-- Load page from id start -->
+    <script>
+        $("#navbar").load("navbar.html");
+    </script>
+    
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+    <!-- Load page from id end -->
+
+    <!-- Bootstrap Javascript Core-->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

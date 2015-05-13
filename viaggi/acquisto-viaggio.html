@@ -1,4 +1,4 @@
-<!--- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) --->
+<!-- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) -->
 
 <!DOCTYPE html>
 <html lang="it">
@@ -29,27 +29,17 @@
 
     <!-- Material Design iconic font -->
     <link href="/material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
-    
-    <!-- Date Picker -->
-    <script src="/js/bootstrap-datepicker.js"></script>
-
-    <script type="text/javascript">
-        function showMe(it, box) {
-            var vis = (box.checked) ? "block" : "none";
-            document.getElementById(it).style.display = vis;
-        }
-    </script>
 
 </head>
 
 <body>
     <div class="background_body">
 
-        <!--- LOGO + HEADER + MENU --->
+        <!-- LOGO + HEADER + MENU -->
 
         <div id="navbar"></div>
 
-        <!--- PAGE --->
+        <!-- PAGE -->
 
         <div class="container">
 
@@ -635,27 +625,40 @@
                 </div>
             </div>
         </div>
-
+        
+        
         <!-- FOOTER -->
 
         <div id="footer"></div>
 
     </div>
 
-    <!-- Bootstrap Javascript Core-->
-
-    <script src="/js/bootstrap.min.js "></script>
-    <!-- <script src="js/docs.min.js "></script> -->
-
-    <!-- scripts parts -->
-
-    <script>
-        $("#navbar ").load("/navbar_conparigi.html ");
-    </script>
-    <script>
-        $("#footer ").load("/footer.html ");
-    </script>
     
+    <!-- SCRIPTS -->
+
+    <!-- Load page from id start -->
+    <script>
+        $("#navbar").load("/navbar.html");
+    </script>
+
+    <script>
+        $("#footer").load("/footer.html");
+    </script>
+    <!-- Load page from id end -->
+
+    <!-- Bootstrap Javascript Core-->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Date Picker start -->
+    <script src="/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        function showMe(it, box) {
+            var vis = (box.checked) ? "block" : "none";
+            document.getElementById(it).style.display = vis;
+        }
+    </script>
+
     <script>
         $('#datepicker-dal').datepicker({
             todayBtn: "linked",
@@ -665,6 +668,7 @@
             format: "dd/mm/yyyy",
         });
     </script>
+
     <script>
         $('#datepicker-al').datepicker({
             todayBtn: "linked",
@@ -674,6 +678,7 @@
             format: "dd/mm/yyyy",
         });
     </script>
+    <!-- Date Picker end -->
 
 </body>
 

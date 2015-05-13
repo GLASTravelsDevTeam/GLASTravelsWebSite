@@ -1,4 +1,4 @@
-<!--- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) --->
+<!-- Designed by Giorgia Bosello, Luca Pinton, Aleksandar Djokic, Sergio Nalesso (Glas) -->
 
 <!DOCTYPE html>
 <html lang="it">
@@ -30,31 +30,15 @@
     <!-- Material Design iconic font -->
     <link href="material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
 
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
-    <script src="flexslider/jquery.flexslider.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function () {
-            $('.flexslider').flexslider();
-        });
-    </script>
-
-    <!-- Date Picker -->
-    <script src="/js/bootstrap-datepicker.js"></script>
-
-    <script type="text/javascript">
-        function showMe(it, box) {
-            var vis = (box.checked) ? "block" : "none";
-            document.getElementById(it).style.display = vis;
-        }
-    </script>
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="flexslider/flexslider.css">
 
 </head>
 
 <body>
     <div class="background_body">
 
-        <!--- NAVBAR --->
+        <!-- NAVBAR -->
 
         <div id="navbar"></div>
 
@@ -62,7 +46,7 @@
 
         <div id="container">
 
-            <!--- SLIDER --->
+            <!-- SLIDER -->
 
             <div class="flexslider">
                 <ul class="slides">
@@ -395,48 +379,76 @@
                 </div>
             </div>
 
-            <!-- FOOTER -->
-
-            <div id="footer"></div>
-
         </div>
+        
+        
+        <!-- FOOTER -->
 
-        <!-- Bootstrap Javascript Core-->
-
-        <script src="js/bootstrap.min.js"></script>
-        <!-- <script src="js/docs.min.js"></script> -->
-
-        <!-- scripts parts -->
-
-        <script>
-            $("#navbar").load("navbar.html");
-        </script>
-        <script>
-            $("#testimonials").load("testimonials.html");
-        </script>
-        <script>
-            $("#footer").load("footer.html");
-        </script>
-        <script>
-            $('#datepicker-dal').datepicker({
-                todayBtn: "linked",
-                language: "it",
-                autoclose: true,
-                todayHighlight: true,
-                format: "dd/mm/yyyy",
-            });
-        </script>
-        <script>
-            $('#datepicker-al').datepicker({
-                todayBtn: "linked",
-                language: "it",
-                autoclose: true,
-                todayHighlight: true,
-                format: "dd/mm/yyyy",
-            });
-        </script>
-
+        <div id="footer"></div>
+        
     </div>
+        
+
+    <!-- SCRIPTS -->
+
+    <!-- Load page from id start -->
+    <script>
+        $("#navbar").load("navbar.html");
+    </script>
+
+    <script>
+        $("#testimonials").load("testimonials.html");
+    </script>
+
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+    <!-- Load page from id end -->
+
+    <!-- Bootstrap Javascript Core-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Flexislider start -->
+    <script src="flexslider/jquery.flexslider.js"></script>
+
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
+    <!-- Flexislider end -->
+
+    <!-- Date Picker start -->
+    <script src="/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        function showMe(it, box) {
+            var vis = (box.checked) ? "block" : "none";
+            document.getElementById(it).style.display = vis;
+        }
+    </script>
+
+    <script>
+        $('#datepicker-dal').datepicker({
+            todayBtn: "linked",
+            language: "it",
+            autoclose: true,
+            todayHighlight: true,
+            format: "dd/mm/yyyy",
+        });
+    </script>
+
+    <script>
+        $('#datepicker-al').datepicker({
+            todayBtn: "linked",
+            language: "it",
+            autoclose: true,
+            todayHighlight: true,
+            format: "dd/mm/yyyy",
+        });
+    </script>
+    <!-- Date Picker end -->
+
 </body>
 
 </html>
