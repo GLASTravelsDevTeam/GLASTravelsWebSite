@@ -15,20 +15,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Main CSS -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
     <!-- FontAwesome -->
-    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="fontawesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/fontawesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- MapGlyphs -->
-    <link href="mapglyphs/mapglyphs.css" rel="stylesheet">
+    <link href="/mapglyphs/mapglyphs.css" rel="stylesheet">
 
     <!-- Material Design iconic font -->
-    <link href="material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
+    <link href="/material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">
 
 </head>
 
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ol class="breadcrumb" id="path">
-                        <li><a href="index.html">Home</a>
+                        <li><a href="/index.html">Home</a>
                         </li>
                         <li>Area Personale</li>
                         <li class="active">Carrello</li>
@@ -66,11 +66,11 @@
 
                     <div class="list-group">
                         <span class="list-group-item list-group-item-default">Area personale</span>
-                        <a href="profilo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo</a>
-                        <a href="carrello_conparigi.html" class="list-group-item active"><i class="fa fa-shopping-cart"></i><span class="badge">2</span> Carrello</a>
-                        <a href="acquisti.html" class="list-group-item"><i class="md md-credit-card"></i> I miei acquisti</a>
-                        <a href="/recensioni/profilo_maldive.html" class="list-group-item"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
-                        <a href="impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
+                        <a href="/area_personale/profilo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo</a>
+                        <a href="/area_personale/carrello.html" class="list-group-item active"><i class="fa fa-shopping-cart"></i><span class="badge">1</span> Carrello</a>
+                        <a href="/area_personale/acquisti.html" class="list-group-item"><i class="md md-credit-card"></i> I miei acquisti</a>
+                        <a href="/area_personale/recensioni_maldive.html" class="list-group-item"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
+                        <a href="/area_personale/impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
                     </div>
 
                 </div>
@@ -78,34 +78,6 @@
                 <!-- SECTION CONTENT -->
 
                 <div class="col-md-9">
-
-                    <!-- PARIGI -->
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="pull-left">
-                                <h4>Parigi</h4>
-                            </div>
-                            <div class="header-center">
-                            </div>
-                            <div class="pull-right">
-                                <h4>dal 01-05-2015 al 07-05-2015</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="panel-body">
-                            <img src="img/parigi550x550.jpg" alt="immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
-
-                            <div class="purchase-item-details">
-                                <p>2 adulti</p>
-                                <p>Totale: EUR 1.700,00</p>
-                                <hr/>
-                                <a class="btn btn-warning" href="/viaggi/acquisto-viaggio.html" role="button">Acquista</a>
-                                <a class="btn btn-default" href="/carrello.html" role="button">Rimuovi</a>
-                            </div>
-
-                        </div>
-                    </div>
 
                     <!-- ISOLE FIJI -->
 
@@ -122,7 +94,7 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
-                            <img src="img/isolefiji550x550.jpg" alt="immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
+                            <img src="/img/isolefiji550x550.jpg" alt="immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
 
                             <div class="purchase-item-details">
                                 <div class="alert alert-warning" role="alert">
@@ -134,9 +106,8 @@
                                 <p>Totale: EUR 3.400,00
                                 </p>
                                 <hr/>
-                                <a class="btn btn-warning" href="#" role="button">Acquista</a>
-                                <a class="btn btn-default" href="#" role="button">Rimuovi</a>
-                                <p><em>( pulsanti disabilitati in questa demo )</em></p>
+                                <a class="btn btn-warning" href="/viaggi/acquisto-viaggio.html" role="button">Acquista</a>
+                                <a class="btn btn-default" href="/area_personale/carrello_vuoto.html" role="button">Rimuovi</a>
                             </div>
 
                         </div>
@@ -156,11 +127,11 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
-                            <p>2 Viaggi</p>
-                            <p>Totale: EUR 5.100,00</p>
+                            <p>1 Viaggio</p>
+                            <p>Totale: EUR 3.400,00</p>
                             <hr/>
 
-                            <a class="btn btn-default pull-right" href="/carrello_vuoto.html" role="button">Svuota carrello</a>
+                            <a class="btn btn-default pull-right" href="/area_personale/carrello_vuoto.html" role="button">Svuota carrello</a>
                         </div>
                     </div>
 
@@ -181,16 +152,16 @@
 
     <!-- Load page from id start -->
     <script>
-        $("#navbar").load("navbar.html");
+        $("#navbar").load("/navbar.html");
     </script>
 
     <script>
-        $("#footer").load("footer.html");
+        $("#footer").load("/footer.html");
     </script>
     <!-- Load page from id end -->
 
     <!-- Bootstrap Javascript Core-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
 </body>
 
