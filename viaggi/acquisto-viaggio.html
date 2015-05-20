@@ -162,9 +162,10 @@
                             </div>
                         </div>
 
-                       <hr style="border-color: #DEDEDE;" />
-                       <br>
-                        
+
+                        <hr style="border-color: #DEDEDE;" />
+                        <br>
+
                         <!-- Selezione adulti -->
                         <div class="form-group">
                             <label class="col-md-3 control-label" for="selectbasic">Numero adulti:</label>
@@ -184,9 +185,9 @@
                                 <br>
                             </div>
                         </div>
-                        
+
                         <div class="hidden-xs hidden-sm"><br><br><br></div>
-                        
+
                         <!-- Selezione bambni -->
                         <div class="form-group">
                             <label class="col-md-3 control-label " for="selectbasic">Numero bambini:</label>
@@ -207,18 +208,18 @@
                                 <br>
                             </div>
                         </div>
-                        
+
                         <div class="hidden-xs hidden-sm"><br><br><br></div>
                         <div class="col-md-12">
                             <p>Il numero massimo di posti prenotabili con un solo acquisto è di 10 adulti e 10 bambini.</p>
                             <p>Per numeri maggiori vi preghiamo di contattare il nostro servizio clienti mediante l'apposita sezione <a href="/contatti.html">contatti</a>.</p>
                             <p>Grazie.</p>
                         </div>
-                        
+
                         <div class="hidden-xs hidden-sm"><br><br><br><br></div>
                         <hr style="border-color: #DEDEDE;">
-                        
-                        
+
+
                         <!-- Upload documenti personali -->
 
                         <div class="col-md-12">
@@ -228,407 +229,160 @@
                                 <p><a class="btn btn-default" href="#" role="button">Carica file</a></p>
                             </form>
                         </div>
-                        
+
                         <div class="hidden-xs hidden-sm"><br><br><br><br><br><br><br><br></div>
 
+
+                        <!-- Dati di pagamento -->
+
                         <hr style="border-color: #DEDEDE;">
-                        <form>
-                        
-                            
-                        <div class="hidden-xs hidden-sm"></div>
-                            
+
+                        <div class="panel-body">
+                            <p class="text-right hidden-xs">
+                                <a class="btn btn-success" href="#" role="button">Codice sconto</a>
+                            </p>
+                            <p class="text-right hidden-xs">
+                                <input type="text" value="THDKVM5U" style="text-align:right">
+                            </p>
+                            <p class="text-center visible-xs">
+                                <a class="btn btn-success" href="#" role="button">Codice sconto</a>
+                            </p>
+                            <p class="text-center visible-xs">
+                                <input type="text" value="THDKVM5U" style="text-align:center">
+                            </p>
+                            <br>
+                            <table class="table ">
+                                <tr>
+                                    <td>
+                                        <p>Viaggio</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-right ">EUR 1.300,00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Biglietti</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-right ">EUR 450,00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Spedizione</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-right ">EUR 7,00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Sconto</p>
+                                    </td>
+                                    <td>
+                                        <p class="text-right ">EUR 57,00</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>Totale</strong>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="text-right "><strong>EUR 1.700,00</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+
                             <!-- non visibile su layout a bassa risoluzione: hidden-xs -->
-                            <div class="purchase-item-details hidden-xs">
+                            <div class="purchase-item-details">
 
-                                <!-- Dati fatturazione acquirente -->
-                                <div class="form-group">
-                                    <label class="control-label" for="radios">Dati di fatturazione:</label><br><br>
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <br>
-                                                    <tr>
-                                                        <td>Titolo</td>
-                                                        <td><select name="titolo">
-                                                            <option value="M">Sig.</option>
-                                                            <option value="F">Sig.ra</option>
-                                                        </select></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Nome</td>
-                                                        <td><input size="50" type="text" name="nome" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cognome</td>
-                                                        <td><input size="50" type="text" name="cognome" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Data di nascita</td>
-                                                        <td><input size="50" type="date" name="nascita" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Codice fiscale</td>
-                                                        <td><input size="50" type="text" name="codicefiscale" maxlength="16" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Indirizzo</td>
-                                                        <td><input size="50" type="text" name="indirizzo" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>C.A.P.</td>
-                                                        <td><input size="50" type="text" name="cap" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Città</td>
-                                                        <td><input size="50" type="text" name="citta" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Provincia</td>
-                                                        <td><input size="50" type="text" name="provincia" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Stato</td>
-                                                        <td><input size="50" type="text" name="stato" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Email</td>
-                                                        <td><input size="50" type="tel" name="cellulare" type="number" required></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Telefono (facoltativo)</td>
-                                                        <td><input size="50" type="tel" name="cellulare" type="number"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    <br>
-                                </div>
+                                <form>
 
-                                <!-- Dati spedizione biglietti -->
-                                <div class="form-group">
-                                    <label class="control-label" for="radios">Indirizzo di spedizione:</label><br><br>
-                                        <input type="checkbox" name="modtype" onclick="showMe('indfatspedhxs', this)" /> selezionare se diverso da quello di fatturazione
-                                        <div id="indfatspedhxs" style="display:none">
+                                    <!-- Dati fatturazione acquirente -->
+                                    <div class="form-group">
+                                        <label class="control-label" for="radios">Dati di fatturazione:</label><br><br>
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <thead>
                                                         <br>
                                                         <tr>
+                                                            <td>Titolo</td>
+                                                            <td><select name="titolo">
+                                                                <option value="M">Sig.</option>
+                                                                <option value="F">Sig.ra</option>
+                                                            </select></td>
+                                                        </tr>
+                                                        <tr>
                                                             <td>Nome</td>
-                                                            <td><input responsive size="50" type="text" name="nome"></td>
+                                                            <td><input type="text" name="nome" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Cognome</td>
-                                                            <td><input size="50" type="text" name="cognome"></td>
+                                                            <td><input type="text" name="cognome" required></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Data di nascita</td>
+                                                            <td><input type="date" name="nascita" required></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Codice fiscale</td>
+                                                            <td><input type="text" name="codicefiscale" maxlength="16" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Indirizzo</td>
-                                                            <td><input size="50" type="text" name="indirizzo"></td>
+                                                            <td><input type="text" name="indirizzo" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>C.A.P.</td>
-                                                            <td><input size="50" type="text" name="cap"></td>
+                                                            <td><input type="text" name="cap" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Città</td>
-                                                            <td><input size="50" type="text" name="citta"></td>
+                                                            <td><input type="text" name="citta" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Provincia</td>
-                                                            <td><input size="50" type="text" name="provincia"></td>
+                                                            <td><input type="text" name="provincia" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Stato</td>
-                                                            <td><input size="50" type="text" name="stato"></td>
+                                                            <td><input type="text" name="stato" required></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Email</td>
+                                                            <td><input type="tel" name="cellulare" type="number" required></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Telefono (facoltativo)</td>
+                                                            <td><input type="tel" name="cellulare" type="number"></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </div>
-                                    <br>
-                                </div>
-
-                            </div>
-
-
-                            <!-- visibile su layout a bassa risoluzione: visible-xs -->
-
-                            <div class="purchase-item-details visible-xs">
-
-                                <!-- Dati fatturazione acquirente -->
-                                <div class="form-group">
-                                    <label class="control-label" for="radios">Dati di fatturazione:</label><br><br>
-                                        <div class="purchase-item-details">
-                                            <div class="table-responsive">
-                                                <br>
-                                                <tr>
-                                                    <td>Titolo</td>
-                                                <tr>
-                                                <br>
-                                                <tr>
-                                                    <td><select name="titolo">
-                                                        <option value="F">Sig.ra</option>
-                                                        <option value="M">Sig.</option>
-                                                    </select></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Nome</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="nome"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Cognome</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="cognome"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Data di nascita</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="date" name="nascita" required></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                <td>Codice fiscale</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="codicefiscale" maxlength="16" required></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>C.A.P.</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="cap"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Città</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="citta"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Provincia</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="provincia"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Stato</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="stato" required></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Email</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="email" name="email" required></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Telefono (facoltativo)</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="tel" name="cellulare" type="number"></td>
-                                                </tr>
-                                                <br><br>
-                                            </div>
-                                        </div>
-                                    <br>
-                                </div>
-
-                                <!-- Dati spedizione biglietti -->
-                                <div class="form-group">
-                                    <label class="control-label" for="radios">Indirizzo di spedizione:</label><br><br>
-                                    <input type="checkbox" name="modtype" onclick="showMe('indfatspedvxs', this)" /> selezionare se diverso da quello di fatturazione
-                                    <div id="indfatspedvxs" style="display:none">
-                                        <div class="purchase-item-details">
-                                            <div class="table-responsive">
-                                                <br>
-                                                <tr>
-                                                    <td>Titolo</td>
-                                                <tr>
-                                                <br>
-                                                <tr>
-                                                    <td><select name="titolo">
-                                                        <option value="F">Sig.ra</option>
-                                                        <option value="M">Sig.</option>
-                                                    </select></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Nome</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="nome"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Cognome</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="cognome"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>C.A.P.</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="cap"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Città</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="citta"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Provincia</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="provincia"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Stato</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="text" name="stato" required></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>e-mail</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="email" name="email"></td>
-                                                </tr>
-                                                <br><br>
-                                                <tr>
-                                                    <td>Telefono (facoltativo)</td>
-                                                </tr>
-                                                <br>
-                                                <tr>
-                                                    <td><input type="tel" name="cellulare" type="number"></td>
-                                                </tr>
-                                                <br><br>
-                                            </div>
-                                        </div>
+                                        <br>
                                     </div>
-                                    <br>
-                                </div>
-                                
+
+                                    <hr style="margin-top: 2px; margin-bottom: 2px; border-color: #DEDEDE;" />
+
+                                    <div class="panel-body hidden-xs">
+                                        <a class="btn btn-default pull-left" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
+                                        <input type="submit" class="btn btn-warning pull-right" value="Conferma dati" formaction="/viaggi/acquisto-viaggio_riepilogo.html">
+                                    </div>
+                                    <div class="panel-body visible-xs">
+                                        <p class="text-center visible-xs">
+                                            <a class="btn btn-default" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
+                                        </p>
+                                        <p class="text-center visible-xs">
+                                            <input type="submit" class="btn btn-warning" value="Conferma dati" formaction="/viaggi/acquisto-viaggio_riepilogo.html">
+                                        </p>
+                                    </div>
+                                </form>              
                             </div>
-
-                            
-                            <!-- Dati di pagamento -->
-
-                            <hr style="border-color: #DEDEDE;">
-
-                            <div class="panel-body">
-                                <p class="text-right hidden-xs">
-                                    <a class="btn btn-success" href="#" role="button">Codice sconto</a>
-                                </p>
-                                <p class="text-right hidden-xs">
-                                    <input type="text" value="THDKVM5U" style="text-align:right">
-                                </p>
-                                <p class="text-center visible-xs">
-                                    <a class="btn btn-success" href="#" role="button">Codice sconto</a>
-                                </p>
-                                <p class="text-center visible-xs">
-                                    <input type="text" value="THDKVM5U" style="text-align:center">
-                                </p>
-                                <br>
-                                <table class="table ">
-                                    <tr>
-                                        <td>
-                                            <p>Viaggio</p>
-                                        </td>
-                                        <td>
-                                            <p class="text-right ">EUR 1.300,00</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>Biglietti</p>
-                                        </td>
-                                        <td>
-                                            <p class="text-right ">EUR 450,00</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>Spedizione</p>
-                                        </td>
-                                        <td>
-                                            <p class="text-right ">EUR 7,00</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p>Sconto</p>
-                                        </td>
-                                        <td>
-                                            <p class="text-right ">EUR 57,00</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p><strong>Totale</strong>
-                                            </p>
-                                        </td>
-                                        <td>
-                                            <p class="text-right "><strong>EUR 1.700,00</strong>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-                            <hr style="margin-top: 2px; margin-bottom: 2px; border-color: #DEDEDE;" />
-
-                            <div class="panel-body hidden-xs">
-                                <a class="btn btn-default pull-left" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
-                                <input type="submit" class="btn btn-warning pull-right" value="Conferma dati" formaction="/viaggi/acquisto-viaggio_transazione.html">
-                            </div>
-                            <div class="panel-body visible-xs">
-                                <p class="text-center visible-xs">
-                                    <a class="btn btn-default" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
-                                </p>
-                                <p class="text-center visible-xs">
-                                    <input type="submit" class="btn btn-warning" value="Conferma dati" formaction="/viaggi/acquisto-viaggio_transazione.html">
-                                </p>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
