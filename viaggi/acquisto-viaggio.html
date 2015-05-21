@@ -102,11 +102,11 @@
                                             <fieldset>
                                                 <!-- Selezione date -->
                                                 <div class="col-md-12">
-                                                    <label>Seleziona le date del tuo viaggio:</label>
+                                                    <label>Seleziona le date di partenza e ritorno:</label>
                                                     <div class="input-daterange input-group">
-                                                        <span class="input-group-addon">Dal</span>
+                                                        <span class="input-group-addon hidden-xs">Dal</span>
                                                         <input type="text" class="input-sm form-control" name="start" id="datepicker-dal" value="01/05/2015"/>
-                                                        <span class="input-group-addon">al</span>
+                                                        <span class="input-group-addon hidden-xs">al</span>
                                                         <input type="text" class="input-sm form-control" name="end" id="datepicker-al" value="07/05/2015"/>
                                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                                                     </div>
@@ -297,12 +297,11 @@
                             </table>
 
 
-                            <!-- non visibile su layout a bassa risoluzione: hidden-xs -->
+                            <!-- Dati fatturazione acquirente -->
+                            
                             <div class="purchase-item-details">
-
+                                
                                 <form>
-
-                                    <!-- Dati fatturazione acquirente -->
                                     <div class="form-group">
                                         <label class="control-label" for="radios">Dati di fatturazione:</label><br><br>
                                             <div class="table-responsive">
@@ -310,61 +309,64 @@
                                                     <thead>
                                                         <br>
                                                         <tr>
-                                                            <td>Titolo</td>
+                                                            <td>Titolo *</td>
                                                             <td><select name="titolo">
                                                                 <option value="M">Sig.</option>
                                                                 <option value="F">Sig.ra</option>
                                                             </select></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Nome</td>
-                                                            <td><input type="text" name="nome" required></td>
+                                                            <td>Nome *</td>
+                                                            <td><input type="text" size="25px" name="nome" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Cognome</td>
-                                                            <td><input type="text" name="cognome" required></td>
+                                                            <td>Cognome *</td>
+                                                            <td><input type="text" size="25px" name="cognome" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Data di nascita</td>
+                                                            <td>Data di nascita *</td>
                                                             <td><input type="date" name="nascita" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Codice fiscale</td>
-                                                            <td><input type="text" name="codicefiscale" maxlength="16" required></td>
+                                                            <td>Codice fiscale *</td>
+                                                            <td><input type="text" size="25px" name="codicefiscale" maxlength="16" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Indirizzo</td>
-                                                            <td><input type="text" name="indirizzo" required></td>
+                                                            <td>Indirizzo *</td>
+                                                            <td><input type="text" size="25px" name="indirizzo" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>C.A.P.</td>
-                                                            <td><input type="text" name="cap" required></td>
+                                                            <td>C.A.P. *</td>
+                                                            <td><input type="text" size="25px" name="cap" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Città</td>
-                                                            <td><input type="text" name="citta" required></td>
+                                                            <td>Città *</td>
+                                                            <td><input type="text" size="25px" name="citta" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Provincia</td>
-                                                            <td><input type="text" name="provincia" required></td>
+                                                            <td>Provincia *</td>
+                                                            <td><input type="text" size="25px" name="provincia" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Stato</td>
-                                                            <td><input type="text" name="stato" required></td>
+                                                            <td>Stato *</td>
+                                                            <td><input type="text" size="25px" name="stato" required></td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Email</td>
-                                                            <td><input type="tel" name="cellulare" type="number" required></td>
+                                                            <td>Email *</td>
+                                                            <td><input type="email" size="25px" name="cellulare" type="number" required></td>
                                                         </tr>
                                                         <tr>
                                                             <td>Telefono (facoltativo)</td>
-                                                            <td><input type="tel" name="cellulare" type="number"></td>
+                                                            <td><input type="tel" size="25px" name="cellulare" type="number"></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        <br>
                                     </div>
+  
+                                    <p class="pull-left"><em>* campi obbligatori</em></p>
+                                    
+                                    <br><br>
 
                                     <hr style="margin-top: 2px; margin-bottom: 2px; border-color: #DEDEDE;" />
 
@@ -382,6 +384,7 @@
                                     </div>
                                 </form>              
                             </div>
+                            
                         </div>
                     </div>
                 </div>
