@@ -295,97 +295,118 @@
                                     </td>
                                 </tr>
                             </table>
-
-
-                            <!-- Dati fatturazione acquirente -->
-                            
-                            <div class="purchase-item-details">
-                                
-                                <form>
-                                    <div class="form-group">
-                                        <label class="control-label" for="radios">Dati di fatturazione:</label><br><br>
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead>
-                                                        <br>
-                                                        <tr>
-                                                            <td>Titolo *</td>
-                                                            <td><select name="titolo">
-                                                                <option value="M">Sig.</option>
-                                                                <option value="F">Sig.ra</option>
-                                                            </select></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Nome *</td>
-                                                            <td><input type="text" size="25px" name="nome" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cognome *</td>
-                                                            <td><input type="text" size="25px" name="cognome" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Data di nascita *</td>
-                                                            <td><input type="date" name="nascita" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Codice fiscale *</td>
-                                                            <td><input type="text" size="25px" name="codicefiscale" maxlength="16" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Indirizzo *</td>
-                                                            <td><input type="text" size="25px" name="indirizzo" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>C.A.P. *</td>
-                                                            <td><input type="text" size="25px" name="cap" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Città *</td>
-                                                            <td><input type="text" size="25px" name="citta" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Provincia *</td>
-                                                            <td><input type="text" size="25px" name="provincia" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Stato *</td>
-                                                            <td><input type="text" size="25px" name="stato" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Email *</td>
-                                                            <td><input type="email" size="25px" name="cellulare" type="number" required></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Telefono (facoltativo)</td>
-                                                            <td><input type="tel" size="25px" name="cellulare" type="number"></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                    </div>
-  
-                                    <p class="pull-left"><em>* campi obbligatori</em></p>
-                                    
-                                    <br><br>
-
-                                    <hr style="margin-top: 2px; margin-bottom: 2px; border-color: #DEDEDE;" />
-
-                                    <div class="panel-body hidden-xs">
-                                        <a class="btn btn-default pull-left" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
-                                        <input type="submit" class="btn btn-warning pull-right" value="Conferma dati" formaction="/viaggi/acquisto-viaggio_riepilogo.html">
-                                    </div>
-                                    <div class="panel-body visible-xs">
-                                        <p class="text-center visible-xs">
-                                            <a class="btn btn-default" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
-                                        </p>
-                                        <p class="text-center visible-xs">
-                                            <input type="submit" class="btn btn-warning" value="Conferma dati" formaction="/viaggi/acquisto-viaggio_riepilogo.html">
-                                        </p>
-                                    </div>
-                                </form>              
-                            </div>
-                            
                         </div>
+
+                        <hr style="border-color: #DEDEDE;">
+                        
+                            
+                        <!-- Dati fatturazione acquirente -->
+
+                        <div class="panel-body">
+                            <div class="col-md-12">
+
+                                <form>
+                                    <div class="well well-sm"><strong><i style="margin-right: 20px;" class="glyphicon glyphicon-ok form-control-feedback"></i> Campo richiesto</strong>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputTitolo">Titolo</label>
+                                        <div class="input-group">
+                                            <select name="InputTitolo" class="form-control">
+                                                <option value="1">Sig.</option>
+                                                <option value="2">Sig.ra</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputNome">Nome</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputNome" placeholder="Elena" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputCognome">Cognome</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputCognome" placeholder="Colombo" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputNascita">Data di nascita</label>
+                                        <div class="input-group">
+                                            <input type="date" class="form-control" name="InputName" id="InputNascita" placeholder="1980-01-01" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputCF">Codice fiscale</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputCF" placeholder="CLMLNE80A41L736J" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputIndirizzo">Indirizzo</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputIndirizzo" placeholder="via Monte Fato, 1" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputCAP">C.A.P.</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputCAP" placeholder="30170" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputCitta">Città</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputCitta" placeholder="Mestre" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputProvincia">Provincia</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputProvincia" placeholder="VE" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputStato">Stato</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputStato" placeholder="Italia" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputEmail">Email</label>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" name="InputEmail" placeholder="elena.colombo@email.it" required>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="InputTelefono">Telefono</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="InputTelefono" placeholder="0123456789">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="hidden-xs">
+                                        <input type="submit" name="submit" id="submit" value="Conferma dati" class="btn btn-warning pull-left" formaction="/viaggi/acquisto-viaggio_riepilogo.html">
+                                        <a class="btn btn-default pull-right" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
+                                    </div>
+                                    <div class="visible-xs" style="text-align: center">
+                                        <input type="submit" name="submit" id="submit" value="Conferma dati" class="btn btn-warning" formaction="/viaggi/acquisto-viaggio_riepilogo.html">
+                                        <br><br>
+                                        <a class="btn btn-default" href="/area_personale/carrello_conparigi.html" role="button">Torna al carrello</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
