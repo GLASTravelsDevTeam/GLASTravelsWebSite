@@ -15,33 +15,188 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Main CSS -->
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
 
     <!-- FontAwesome -->
-    <link href="/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../fontawesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- MapGlyphs -->
-    <link href="/mapglyphs/mapglyphs.css" rel="stylesheet">
+    <link href="../mapglyphs/mapglyphs.css" rel="stylesheet">
 
     <!-- Material Design iconic font -->
-    <link href="/material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">    
+    <link href="../material-design-iconic-font/css/material-design-iconic-font.css" rel="stylesheet">    
     
     <!-- Image Gallery -->
     <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-image-gallery.min.css">
 
 </head>
 
 <body>
     <div class="background_body">
 
-        <!-- LOGO + HEADER + MENU -->
+        <!-- NAVBAR -->
 
-        <div id="navbar"></div>
+        <div id="navbar">
+        
+            <nav class="navbar-default navbar navbar-static-top">
+                <div class="container">
+
+                    <!-- header -->
+
+                    <div class="navbar-header">
+
+                        <!-- mobile drawer -->
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <!-- Logo e nome del sito  -->
+
+                        <div id="logo">
+                            <a href="../index.html"><img src="../favicon.png" class="hidden-xs" height="45" width="45"></a>
+                            <a class="navbar-brand" href="../index.html">Glas Travels</a>
+                        </div>
+                    </div>
+
+                    <!-- elementi della navbar -->
+
+                    <div class="navbar-collapse collapse">
+
+                        <!-- elementi della navbar allineati a sinistra -->
+
+                        <ul class="nav navbar-nav navbar-center">
+
+                            <!-- Viaggi -->
+
+                            <li class="dropdown"><a href="../#" class="dropdown-toggle" data-toggle="dropdown">Viaggi<span style="margin-left: 5px;" class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="../viaggi/africa.html"><i class="mg map-glb-af mg-fw"></i>&nbsp; Africa</a>
+                                    </li>
+                                    <li><a href="../viaggi/america.html"><i class="mg map-glb-am mg-fw"></i>&nbsp; America</a>
+                                    </li>
+                                    <li><a href="../viaggi/asia.html"><i class="mg map-glb-as mg-fw"></i>&nbsp; Asia</a>
+                                    </li>
+                                    <li><a href="../viaggi/europa.html"><i class="mg map-glb-eu mg-fw"></i>&nbsp; Europa</a>
+                                    </li>
+                                    <li><a href="../viaggi/oceania.html"><i class="mg map-glb-oc mg-fw"></i>&nbsp; Oceania</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Azienda -->
+
+                            <li class="dropdown"><a href="../#" class="dropdown-toggle" data-toggle="dropdown">Azienda<span style="margin-left: 5px;" class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="../azienda/chi_siamo.html"><i class="fa fa-user"></i>&nbsp;&nbsp; Profilo aziendale</a>
+                                    </li>
+                                    <li><a href="../azienda/business.html"><i class="fa fa-line-chart"></i>&nbsp; Business</a>
+                                    </li>
+                                    <li><a href="../azienda/sicurezza.html"><i class="md md-vpn-lock"></i>&nbsp; Sicurezza &amp; Privacy</a>
+                                    </li>
+                                    <li><a href="../azienda/tos.html"><i class="md md-info-outline"></i>&nbsp; Termini e Condizioni</a>
+                                    </li>
+                                    <li><a href="../azienda/contatti.html"><i class="md md-email"></i>&nbsp; Contattaci</a>
+                                    </li>
+                                    <li><a href="../azienda/lavori_stagionali.html"><i class="md md-work"></i>&nbsp; Lavora con Noi</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="../recensioni.html">Recensioni</a>
+                            </li>
+
+                            <li><a href="../blog.html">Blog</a>
+                            </li>
+
+                            <!-- login -->
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<span style="margin-left: 5px;" class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu" role="menuitem" style="min-width: 250px;">
+                                    <li>
+                                        <form class="form" role="form" id="login">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-at" style="width: 15px;"></i></span>
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock" style="width: 15px;"></i></span>
+                                                <input type="text" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox">Ricordami
+                                                </label>
+                                            </div>
+                                            <a class="btn btn-success btn-block" href="profilo.html">Accedi</a>
+                                            <a class="btn btn-primary btn-block" href="profilo.html"><span class="fa fa-facebook" style="width: 15px;"></span> Accedi con Facebook
+                                            </a>
+                                            <hr/>
+                                            <p class="text-center" style="margin-top: 0px; margin-bottom: 0px;">Non sei registrato? <a href="../registrazione.html">Clicca qui!</a>
+                                            </p>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="carrello.html"><i class="fa fa-shopping-cart"></i> <span class="badge">1</span></a>
+                            </li>
+                        </ul>
+
+                        <!-- search bar visibile -->
+
+                        <form class="navbar-form navbar-right visible-lg visible-md visible-xs ">
+                            <div class="input-group">
+                                <input type="search" placeholder="Cosa stai cercando?" class="form-control" />
+                                <div class="input-group-btn ">
+                                    <a class="btn btn-info" href="../ricerca.html">
+                                        <span class="fa fa-search"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- elementi della navbar allineati a destra -->
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <!-- search bar a scomparsa -->
+
+                            <li class="dropdown visible-sm ">
+                                <a href="# " class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-search"></span></a>
+                                <ul class="dropdown-menu" role="menuitem">
+                                    <li>
+                                        <form class="navbar-form navbar-left visible-sm" role="search">
+                                            <div class="form-group ">
+                                                <div class="input-group">
+                                                    <input type="search" style="width: 240px;" placeholder="Cosa stai cercando?" class="form-control" />
+                                                    <div class="input-group-btn ">
+                                                        <a class="btn btn-info" href="../ricerca.html">
+                                                            <span class="fa fa-search"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        
+        </div>
 
         <!-- PAGE -->
 
@@ -52,7 +207,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ol class="breadcrumb" id="path">
-                        <li><a href="/index.html">Home</a>
+                        <li><a href="../index.html">Home</a>
                         </li>
                         <li>Area Personale</li>
                         <li class="active">Le mie recensioni</li>
@@ -70,11 +225,11 @@
 
                     <div class="list-group">
                         <span class="list-group-item list-group-item-default">Area personale</span>
-                        <a href="/area_personale/profilo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo</a>
-                        <a href="/area_personale/carrello.html" class="list-group-item"><i class="fa fa-shopping-cart"></i><span class="badge">1</span> Carrello</a>
-                        <a href="/area_personale/acquisti.html" class="list-group-item"><i class="md md-credit-card"></i> I miei acquisti</a>
-                        <a href="/area_personale/recensioni_parigi.html" class="list-group-item active"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
-                        <a href="/area_personale/impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
+                        <a href="profilo.html" class="list-group-item"><i class="fa fa-user"></i> Profilo</a>
+                        <a href="carrello.html" class="list-group-item"><i class="fa fa-shopping-cart"></i><span class="badge">1</span> Carrello</a>
+                        <a href="acquisti.html" class="list-group-item"><i class="md md-credit-card"></i> I miei acquisti</a>
+                        <a href="recensioni_parigi.html" class="list-group-item active"><i class="fa fa-smile-o"></i> Le mie recensioni</a>
+                        <a href="impostazioni.html" class="list-group-item"><i class="fa fa-cog"></i> Impostazioni</a>
                     </div>
 
                 </div>
@@ -99,7 +254,7 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
-                            <img src="/img/parigi550x550.jpg" alt="Immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
+                            <img src="../img/parigi550x550.jpg" alt="Immagine di copertina del viaggio" class="purchase-item-thumbnail fixed hidden-xs" />
 
                             <div class="purchase-item-details">
                                 <form>
@@ -112,8 +267,8 @@
                                         <a class="btn btn-default" href="#" role="button">Carica foto</a>
                                     </form>
                                     <br><br>
-                                        <a class="btn btn-warning pull-left" href="/area_personale/recensioni_parigi.html" role="button">Pubblica</a>
-                                        <a class="btn btn-default pull-right" href="/area_personale/recensioni_vuoto.html" role="button">Rimuovi</a>
+                                        <a class="btn btn-warning pull-left" href="recensioni_parigi.html" role="button">Pubblica</a>
+                                        <a class="btn btn-default pull-right" href="recensioni_vuoto.html" role="button">Rimuovi</a>
                                     </div>
                                 </form>
                             </div>
@@ -128,27 +283,101 @@
 
         <!-- FOOTER -->
 
-        <div id="footer"></div>
+        <div id="footer">
+        
+            <footer>
+                <div class="footer">
+                    <div class="background_footer">
+                        <hr>
+                        <div class="container narrow row-fluid">
+
+                            <!-- RIGA SOCIAL BUTTONS -->
+
+                            <div id="social" class="row">
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="#" i class="fa fa-fw fa-facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" i class="fa fa-fw fa-twitter"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" i class="fa fa-fw fa-youtube"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" i class="fa fa-fw fa-flickr"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- RIGA SHORTLINKS -->
+
+                            <div id="shortlinks" class="row">
+                                <ul class="list-inline">
+                                    <div class="col-sm-4">
+                                        <li>
+                                            <p class="white">Azienda</p>
+                                            <p> <a href="../azienda/chi_siamo.html">Chi siamo</a>
+                                                <br/>
+                                                <a href="../azienda/contatti.html">Sede e contatti</a>
+                                                <br/>
+                                                <a href="../azienda/lavori_stagionali.html">Lavora con noi</a>
+                                            </p>
+                                        </li>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-1">
+                                        <li>
+                                            <p class="white">Viaggi più richiesti</p>
+                                            <p> <a href="../viaggi/europa/berlino.html">Berlino</a>
+                                                <br/>
+                                                <a href="../viaggi/america/ottawa.html">Ottawa</a>
+                                                <br/>
+                                                <a href="../viaggi/oceania/sydney.html">Sydney</a>
+                                            </p>
+                                        </li>
+                                    </div>
+                                    <div class="col-sm-3 col-sm-offset-1">
+                                        <li>
+                                            <p class="white">Link utili</p>
+                                            <p> <a href="../FAQ.html">FAQ</a>
+                                                <br/>
+                                                <a href="../azienda/sicurezza.html">Informativa sulla Privacy</a>
+                                                <br/>
+                                                <a href="../azienda/tos.html">Termini di Servizio</a>
+                                                <br/>
+                                            </p>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <hr>
+
+                            <!-- RIGA COPYRIGHT -->
+
+                            <div class="row" id="copyright">
+                                <p class="pull-left">Glas Travels &reg; 2015 | <a href="../sitemap.html">Mappa del sito</a>
+                                </p>
+                                <p class="pull-right"><a href="#">Top</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+        </div>
 
     </div>
 
+    <!-- SCRIPTS -->
+
     <!-- Bootstrap Javascript Core-->
-
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- <script src="js/docs.min.js"></script> -->
-    <!-- scripts parts -->
-
-    <script>
-        $("#navbar").load("/navbar.html");
-    </script>
-    <script>
-        $("#footer").load("/footer.html");
-    </script>
+    <script src="../js/bootstrap.min.js"></script>
         
     <!-- scripts image gallery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="/js/bootstrap-image-gallery.min.js"></script>
+    <script src="../js/bootstrap-image-gallery.min.js"></script>
 
 </body>
 
